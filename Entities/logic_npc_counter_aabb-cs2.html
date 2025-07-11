@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/logic_npc_counter_aabb-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/logic_npc_counter_aabb-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/logic_npc_counter_aabb-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/logic_npc_counter_aabb-cs2" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.7d135553.css">
+<script src="/assets/js/runtime~main.cf661d35.js" defer="defer"></script>
+<script src="/assets/js/main.448ba06d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Source2 Wiki</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col"><article><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAACV1JREFUeJztm39sFMcVxz/nH/QcJ5attFaBtimyTWpqEoGsOljkDxCU5uwjlqNWiVAqJdBIkWkklxSJ6Ioq4hSJH0VycZNUkH+QFaURV8LZB6RSoyroWkcIB+nAAWMh1IIRTWTL4cLpzHH9Y3fnZndn93Z9No5avpJ1s7Mz89589703b2fHcB/3cR//zwgUO0CwLAiQM67Td9Kq+wJp0maZd3yJy1mui9a/rMj+QqH1ofWsC62j4hsVtHe0M3BsgPaOduIDceIfxIkfi9v66PA1iev/uQ7Aom8tUo1lRcGxi2EwBxDeGGZdaB3r29YDUP1gtbmVTnH8mEZE6qsvATj14V+1G3d86ZELbwzz9uG3GTg+AEAmmyEUDhGPxU0Nt760Vb50HN8vASbGe3b10PlCp6mBEwEGJv99Q5SXLV/ph4AcaBYwcHyA9o3tAET/EgUgFA7ZOmx9aSsjIyNcuXzFUYYfAjQFJq4TfV8T2vJEC6dOngKg6+UuADK5DAvKFygHmJicYHh4mMTHCQD2797vR4fcxJfXGf98EoAjhw7z/JbNVFdX884f3uHFX74IQEWwAoDUrRQ3x2+SPJ8k9kGM2LEYQCCdNseoEo/CAdj3+31E34/S8kQLnT/Vnrwx8ctjlwEoLSklm80CiF8DwWA+IOqTnzGe37KZI4cO89GJj1jzkzW2+6lbKWoX1hLuCBN+OmxU22KGHwICr/7qVRZ/ZzFD/xxi6B9DAPS92UddXZ1olL2bdeovnk7rk620PtnqQ7SGmocWceTQYY4cOsy5s8M8tnIlAEsaltja1n67VpTDHWHCHWFbG5jBKtCyqkWUr/3rmijX19UDCPPPZrOUlpaa+o7fGBflVatXGa6Qw5sbBIDcubPD7PvjQVFZXV3t2KHywUpRDj8dNtxAtoKA7yB44coFcXFq8BTNzc0AND3eBMDtW7dNHWSfiw/GCT4Q5MwnZ2j+UTNvHXyLM5+cEcoUkg3Q/+d+BmOD9P2pT6u15hHlwF0gq5el6V44f4G9PXsBODlw0pNQpRIGDhw8QHNzM02PN5E8lwQwuQNoBMQH80tU8IEgW36+xWl8J31yAD17eljyfbO5l5SWUF9XLywQw+hK5J7a5AEWLl4IwLLvLgP8u4CsYA4g+WmS5KdJUXnx4kVTh+jRKKFQiHhcIyF+XJBhG8sB4l5ke0SYvGEBY2NjQN4FxcTvYotw0fei1C+tN9UVmwkCkDyXFC5gPG1jwul0WpQtkH3fawyQ+wqMjY3R92YfG368IT9By+RHzo8A0P1yt2nMmWaCOYDOcCfRWJSlS5cSbgtzafQSsYGYk9K2/i73C8qW8ewLz9K0QnsAfKX9rFmrLY03Ps8nXr37ekl8nGB6elrILqSgAWs7N5Mt+gXFBSq9zHVl0NPTIy4bH2tkKDEkrvf07DH6AS55QH93I6+0L5YFy3/zjQBm95H/iEQiRCIRAIYSQ/Tu63UdSIVcf3cjQ6NTbFjxiKhsez3hRbH5RT6q5UDxOp5flgPm5g44PXxVlAe7G0lbejyzd0S+NCUZhbWdA+TzggCQ0/cnDF1s1utrFTg9OkVGcprWR6s4+utGU5tgWZC23cNKYcy/hdhiRkECdg/k090d+ZgAQOLilK392h8GGdyxwlY/T6Soxg4UagBSDOjVCLBHW2DbxsW2jgtK7a/Cq3+Qz9cnpdR1095hB/H3zlL8EGBro+rY89RCV4Gp8hJWP1olrtOW+5aY4kXXouA1BqgSFyUpkRPjtkorKacl18nov606KUe7zTEF4JkDI7IOMhyDm4N+nhtJy6D2Xt32utJcPW9lydghuU7GevOufYDWBtlitGVt0wGzPoa+tdm76A/BEwGFl8ERbQtq8DdGYNM2NfScwMsOry2L3H38mq2RKp4YSIzmLWZad5r+bkOfNJsOOLpNQThawNHuRhKjU9RkzY8kVa6tg7IfA7Spfdfzfp+qslA8AZgq1fRpaahiaHSKqtm2gMiJcaUipy1L4KCRD+gjtu1W+q2TUp7iiRdC/MKRANnsrIrsUJirIETfkBjcYRCi+aweQ/x8FLG5jirAbm93dh0vKFMoVUgZkw+ryAA4/ZlBiOazRcQQt3s5fZmmv7tKcbswygC6duUTleoyeOO1Sa48NGkS5KCILaDZzVQjYPiM9l5uxBDDZdJ6YuSw1BXy44CeR+TSuiS/NJhc4HJymkrdhKPvpkR91+/0bajXJg0lnXZyPPut4TIZPcYa67+RGG2aGSG+IVLcrl3VJgIMGDTULy8HBAlelTJ/SntqobAAAxnLuj+t/7aItV+97ltk52aaB5gyqQ0/qyxIgLwN3bdz5mSAFj+cCMhDe7doadCs0Nh03zLLiVAAyNU3ldsaPPyI+eXmi6v53E2OHToZbnt9rgmR8xKnOcWVz7QYMlWqfXk62r1EvxukS0+E7NoXhnKnVZ5Y5y9q+PuH+XjwxdUMnR2tRI+pd4cUVuEkT4bNOpwIMQgwkNWnvbKhirN64jYTF7ApY5DgZgF+UKy7GITcCwLMCnwTdu7Pf2iUCXCzBDc4WIknQoLAK+15feaKAKVwA7KLFELaEuSCin1oCyGevhHK2NZeS2tDJYnRFDXZ0lknQKmAVxK8EGBAIsL3wY1tulXcCwKEUDcYBLkRoHIhn7FC6HOvCSiokFHY/FuzpbhZgBUFVhQTFATImLVDUn5hshQ/scMJ2RLzqvRwSYY39Oy087lKpssg9m6KbXr6vn+7e3y5l/v0SrfxS0qoYyWx49rn+EsXb1J9RzsFIt5d9NQu/FwlS5eXY3wIcoov8/2hQmkhfTsnHYmRLUAmwMC0ZYfjew35/FC12sw3ATJcA6tBiGwBADfPp0ztZAJkC5ChE/G1I8ANuZnGj9ISzUJ6I7aNWG8fR78uKLQiOBHUsraKob+J7b15DYJzCa9nFv5X5nsfs4ZiTcLJ9ObD1GZ0OMPXYWkVJm5PKMvzgZnIN1YBL/954edwlJdjcHN52Mrz2GJTVGavpqJGsFlTUSPqrXVOfSz9HHedVO1VMqxlt35exlLNLTdxe0Icg3MqF7rvUFbB87he67yUJ25P2OT6SoTmyMfdDjkUBZW+Vsv0TIDVFGcRcxYLZBO3QLilZwKsvmetdxGmnKDKl1X+6STXbUzrWPJ4VhRrfgVXByflXQjzNX4Rbc2FOULR/9h4H3OM/wK8LCSmWuN43wAAAABJRU5ErkJggg==" alt="logic_npc_counter_aabb icon" style="height:80px">
+<p>Point Entity</p>
+<p>Does calculations based on the number of a specified type of NPC in a specified region.</p>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Keyvalues</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p><strong>Start Disabled</strong> (<code>startDisabled</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>Source Entity Name</strong> (<code>sourceEntityName</code>) &lt;<code>TargetDestination</code>&gt;<br>
+<!-- -->Name of the entity to check distance from</p>
+</li>
+<li>
+<p><strong>On Min Count All</strong> (<code>minCount</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count threshold of all npcs</p>
+</li>
+<li>
+<p><strong>On Max Count All</strong> (<code>maxCount</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count threshold of all npcs</p>
+</li>
+<li>
+<p><strong>Min Factor All</strong> (<code>minFactor</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count of all npcs for factor calculations</p>
+</li>
+<li>
+<p><strong>Max Factor All</strong> (<code>maxFactor</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count of all npcs for factor calculations</p>
+</li>
+<li>
+<p><strong>Class name of NPC 1 to count</strong> (<code>NPCType1</code>) &lt;<code>NPCClass</code>&gt;</p>
+</li>
+<li>
+<p><strong>NPC State 1</strong> (<code>NPCState1</code>) &lt;<code>Choices</code>&gt;<br>
+<!-- -->Only match NPCs in this state</p>
+<ul>
+<li>Any</li>
+<li>None</li>
+<li>Idle</li>
+<li>Alert</li>
+<li>Combat</li>
+<li>Script</li>
+<li>Playdead</li>
+<li>Prone</li>
+<li>Dead</li>
+</ul>
+</li>
+<li>
+<p><strong>Invert State</strong> (<code>invertState1</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>On Min Count 1</strong> (<code>minCount1</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count threshold of npc 1</p>
+</li>
+<li>
+<p><strong>On Max Count 1</strong> (<code>maxCount1</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count threshold of npc 1</p>
+</li>
+<li>
+<p><strong>Min Factor 1</strong> (<code>minFactor1</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count of npc 1 for factor calculations</p>
+</li>
+<li>
+<p><strong>Max Factor 1</strong> (<code>maxFactor1</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count of npc 1 for factor calculations</p>
+</li>
+<li>
+<p><strong>Default Dist 1</strong> (<code>defaultDist1</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The default minimum player distance of npc 1</p>
+</li>
+<li>
+<p><strong>Class name of NPC 2 to count</strong> (<code>NPCType2</code>) &lt;<code>NPCClass</code>&gt;</p>
+</li>
+<li>
+<p><strong>NPC State 2</strong> (<code>NPCState2</code>) &lt;<code>Choices</code>&gt;<br>
+<!-- -->Only match NPCs in this state</p>
+<ul>
+<li>Any</li>
+<li>None</li>
+<li>Idle</li>
+<li>Alert</li>
+<li>Combat</li>
+<li>Script</li>
+<li>Playdead</li>
+<li>Prone</li>
+<li>Dead</li>
+</ul>
+</li>
+<li>
+<p><strong>Invert State</strong> (<code>invertState2</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>On Min Count 2</strong> (<code>minCount2</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count threshold of npc 2</p>
+</li>
+<li>
+<p><strong>On Max Count 2</strong> (<code>maxCount2</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count threshold of npc 2</p>
+</li>
+<li>
+<p><strong>Min Factor 2</strong> (<code>minFactor2</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count of npc 2 for factor calculations</p>
+</li>
+<li>
+<p><strong>Max Factor 2</strong> (<code>maxFactor2</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count of npc 2 for factor calculations</p>
+</li>
+<li>
+<p><strong>Default Dist 2</strong> (<code>defaultDist2</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The default minimum player distance of npc 2</p>
+</li>
+<li>
+<p><strong>Class name of NPC 3 to count</strong> (<code>NPCType3</code>) &lt;<code>NPCClass</code>&gt;</p>
+</li>
+<li>
+<p><strong>NPC State 3</strong> (<code>NPCState3</code>) &lt;<code>Choices</code>&gt;<br>
+<!-- -->Only match NPCs in this state</p>
+<ul>
+<li>Any</li>
+<li>None</li>
+<li>Idle</li>
+<li>Alert</li>
+<li>Combat</li>
+<li>Script</li>
+<li>Playdead</li>
+<li>Prone</li>
+<li>Dead</li>
+</ul>
+</li>
+<li>
+<p><strong>Invert State</strong> (<code>invertState3</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>On Min Count 3</strong> (<code>minCount3</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count threshold of npc 3</p>
+</li>
+<li>
+<p><strong>On Max Count 3</strong> (<code>maxCount3</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count threshold of npc 3</p>
+</li>
+<li>
+<p><strong>Min Factor 3</strong> (<code>minFactor3</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The minimum count of npc 3 for factor calculations</p>
+</li>
+<li>
+<p><strong>Max Factor 3</strong> (<code>maxFactor3</code>) &lt;<code>Int</code>&gt;<br>
+<!-- -->The maximum count of npc 3 for factor calculations</p>
+</li>
+<li>
+<p><strong>Default Dist 3</strong> (<code>defaultDist3</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The default minimum player distance of npc 3</p>
+</li>
+<li>
+<p><strong>Entity Scripts</strong> (<code>vscripts</code>) &lt;<code>ScriptList</code>&gt;<br>
+<!-- -->Name(s) of script files that are executed after all entities have spawned.</p>
+</li>
+<li>
+<p><strong>Name</strong> (<code>targetname</code>) &lt;<code>TargetSource</code>&gt;<br>
+<!-- -->The name that other entities refer to this entity by.</p>
+</li>
+<li>
+<p><strong>Box Outer Mins</strong> (<code>box_outer_mins</code>) &lt;<code>Vector</code>&gt;</p>
+</li>
+<li>
+<p><strong>Box Outer Maxs</strong> (<code>box_outer_maxs</code>) &lt;<code>Vector</code>&gt;</p>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Inputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>Enable &lt;<code>Void</code>&gt;<br>
+<!-- -->Enable the entity</p>
+</li>
+<li>
+<p>Disable &lt;<code>Void</code>&gt;<br>
+<!-- -->Disable the entity</p>
+</li>
+<li>
+<p>SetSourceEntity &lt;<code>String</code>&gt;<br>
+<!-- -->Set the name of the entity to base this entities location on. This check will follow the entity as it moves.</p>
+</li>
+<li>
+<p>RunScriptFile &lt;<code>String</code>&gt;<br>
+<!-- -->Load and execute a script file</p>
+</li>
+<li>
+<p>RunScriptCode &lt;<code>String</code>&gt;<br>
+<!-- -->Execute a fragment of script code</p>
+</li>
+<li>
+<p>CallScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Call a script function</p>
+</li>
+<li>
+<p>CallPrivateScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function from this entity&#x27;s private script scope.</p>
+</li>
+<li>
+<p>CallGlobalScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function in the global script scope.</p>
+</li>
+<li>
+<p>Kill &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity from the world.</p>
+</li>
+<li>
+<p>KillHierarchy &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity and all its children from the world.</p>
+</li>
+<li>
+<p>KillConstrained &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity, all its children, and anything constrained to it, from the world.</p>
+</li>
+<li>
+<p>AddOutput &lt;<code>String</code>&gt;<br>
+<!-- -->Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname&gt;inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.</p>
+</li>
+<li>
+<p>FireUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser1 output to be fired.</p>
+</li>
+<li>
+<p>FireUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser2 output to be fired.</p>
+</li>
+<li>
+<p>FireUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser3 output to be fired.</p>
+</li>
+<li>
+<p>FireUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser4 output to be fired.</p>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Outputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>OnMinCountAll &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of all npcs transitions to the min count or less.</p>
+</li>
+<li>
+<p>OnMaxCountAll &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of all npcs transitions to the max count or greater.</p>
+</li>
+<li>
+<p>OnRangeFactorAll &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs the factor of the count of all npcs.</p>
+</li>
+<li>
+<p>OnMinPlayerDistAll &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs distance to the NPC, of all NPCs, that is closest to player.</p>
+</li>
+<li>
+<p>OnMinCount1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 1 transitions to the min count or less.</p>
+</li>
+<li>
+<p>OnMaxCount1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 1 transitions to the max count or greater.</p>
+</li>
+<li>
+<p>OnRangeFactor1 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs the factor of the count of npc 1.</p>
+</li>
+<li>
+<p>OnMinPlayerDist1 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs distance to the NPC, of NPCs 1, that is closest to player.</p>
+</li>
+<li>
+<p>OnMinCount2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 2 transitions to the min count or less.</p>
+</li>
+<li>
+<p>OnMaxCount2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 2 transitions to the max count or greater.</p>
+</li>
+<li>
+<p>OnRangeFactor2 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs the factor of the count of npc 2.</p>
+</li>
+<li>
+<p>OnMinPlayerDist2 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs distance to the NPC, of NPCs 2, that is closest to player.</p>
+</li>
+<li>
+<p>OnMinCount3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 3 transitions to the min count or less.</p>
+</li>
+<li>
+<p>OnMaxCount3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the count of npc 3 transitions to the max count or greater.</p>
+</li>
+<li>
+<p>OnRangeFactor3 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs the factor of the count of npc 3.</p>
+</li>
+<li>
+<p>OnMinPlayerDist3 &lt;<code>Float</code>&gt;<br>
+<!-- -->Outputs distance to the NPC, of NPCs 3, that is closest to player.</p>
+</li>
+<li>
+<p>OnUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser1 input.</p>
+</li>
+<li>
+<p>OnUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser2 input.</p>
+</li>
+<li>
+<p>OnUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser3 input.</p>
+</li>
+<li>
+<p>OnUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser4 input.</p>
+</li>
+<li>
+<p>OnKilled &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the entity is killed and removed from the game. Parameter is the inflictor.</p>
+</li>
+</ul></div></div></details></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>

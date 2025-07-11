@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/env_fog_controller-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/env_fog_controller-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_fog_controller-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_fog_controller-cs2" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.7d135553.css">
+<script src="/assets/js/runtime~main.cf661d35.js" defer="defer"></script>
+<script src="/assets/js/main.448ba06d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Source2 Wiki</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col"><article><img src="data:image/png;base64,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" alt="env_fog_controller icon" style="height:80px">
+<p>Point Entity</p>
+<p>An entity that controls the fog and view distance in the map.</p>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Keyvalues</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p><strong>Entity Scripts</strong> (<code>vscripts</code>) &lt;<code>ScriptList</code>&gt;<br>
+<!-- -->Name(s) of script files that are executed after all entities have spawned.</p>
+</li>
+<li>
+<p><strong>Name</strong> (<code>targetname</code>) &lt;<code>TargetSource</code>&gt;<br>
+<!-- -->The name that other entities refer to this entity by.</p>
+</li>
+<li>
+<p><strong>Fog Enable</strong> (<code>fogenable</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>Fog Blend</strong> (<code>fogblend</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>Use Angles for Fog Dir</strong> (<code>use_angles</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>Primary Fog Color</strong> (<code>fogcolor</code>) &lt;<code>Color255</code>&gt;</p>
+</li>
+<li>
+<p><strong>Secondary Fog Color</strong> (<code>fogcolor2</code>) &lt;<code>Color255</code>&gt;</p>
+</li>
+<li>
+<p><strong>Primary Fog Direction</strong> (<code>fogdir</code>) &lt;<code>String</code>&gt;</p>
+</li>
+<li>
+<p><strong>Fog Start</strong> (<code>fogstart</code>) &lt;<code>String</code>&gt;</p>
+</li>
+<li>
+<p><strong>Fog End</strong> (<code>fogend</code>) &lt;<code>String</code>&gt;</p>
+</li>
+<li>
+<p><strong>Fog Max Density [0..1]</strong> (<code>fogmaxdensity</code>) &lt;<code>Float</code>&gt;</p>
+</li>
+<li>
+<p><strong>Fog Exponent [0..1]</strong> (<code>fogexponent</code>) &lt;<code>Float</code>&gt;</p>
+</li>
+<li>
+<p><strong>Interpolate time</strong> (<code>foglerptime</code>) &lt;<code>Float</code>&gt;</p>
+</li>
+<li>
+<p><strong>Far Z Clip Plane</strong> (<code>farz</code>) &lt;<code>String</code>&gt;</p>
+</li>
+<li>
+<p><strong>HDR color scale.</strong> (<code>HDRColorScale</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->float value to multiply fog color by when running in HDR mode.</p>
+</li>
+<li>
+<p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
+<ul>
+<li>Master (Has priority if multiple env_fog_controllers exist)</li>
+</ul>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Inputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>RunScriptFile &lt;<code>String</code>&gt;<br>
+<!-- -->Load and execute a script file</p>
+</li>
+<li>
+<p>RunScriptCode &lt;<code>String</code>&gt;<br>
+<!-- -->Execute a fragment of script code</p>
+</li>
+<li>
+<p>CallScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Call a script function</p>
+</li>
+<li>
+<p>CallPrivateScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function from this entity&#x27;s private script scope.</p>
+</li>
+<li>
+<p>CallGlobalScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function in the global script scope.</p>
+</li>
+<li>
+<p>Kill &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity from the world.</p>
+</li>
+<li>
+<p>KillHierarchy &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity and all its children from the world.</p>
+</li>
+<li>
+<p>KillConstrained &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity, all its children, and anything constrained to it, from the world.</p>
+</li>
+<li>
+<p>AddOutput &lt;<code>String</code>&gt;<br>
+<!-- -->Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname&gt;inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.</p>
+</li>
+<li>
+<p>FireUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser1 output to be fired.</p>
+</li>
+<li>
+<p>FireUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser2 output to be fired.</p>
+</li>
+<li>
+<p>FireUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser3 output to be fired.</p>
+</li>
+<li>
+<p>FireUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser4 output to be fired.</p>
+</li>
+<li>
+<p>SetStartDist &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the fog start distance.</p>
+</li>
+<li>
+<p>SetEndDist &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the fog end distance.</p>
+</li>
+<li>
+<p>TurnOn &lt;<code>Void</code>&gt;<br>
+<!-- -->Turn the fog on.</p>
+</li>
+<li>
+<p>TurnOff &lt;<code>Void</code>&gt;<br>
+<!-- -->Turn the fog off.</p>
+</li>
+<li>
+<p>SetColor &lt;<code>Color255</code>&gt;<br>
+<!-- -->Set the primary fog color.</p>
+</li>
+<li>
+<p>SetColorSecondary &lt;<code>Color255</code>&gt;<br>
+<!-- -->Set the secondary fog color.</p>
+</li>
+<li>
+<p>SetFarZ &lt;<code>Integer</code>&gt;<br>
+<!-- -->Set the far clip plane distance.</p>
+</li>
+<li>
+<p>SetAngles &lt;<code>String</code>&gt;<br>
+<!-- -->Set the angles to use for the secondary fog direction.</p>
+</li>
+<li>
+<p>Set2DSkyboxFogFactor &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the current amount of fog to blend into the 2D skybox.  0 is no fog, 1 is fully fogged.</p>
+</li>
+<li>
+<p>SetMaxDensity &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the current max fog density.</p>
+</li>
+<li>
+<p>SetColorLerpTo &lt;<code>Color255</code>&gt;<br>
+<!-- -->Set the primary fog color.</p>
+</li>
+<li>
+<p>SetColorSecondaryLerpTo &lt;<code>Color255</code>&gt;<br>
+<!-- -->Set the secondary fog color.</p>
+</li>
+<li>
+<p>SetStartDistLerpTo &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the fog start distance.</p>
+</li>
+<li>
+<p>SetEndDistLerpTo &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the fog end distance.</p>
+</li>
+<li>
+<p>Set2DSkyboxFogFactorLerpTo &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the amount of fog to blend into the 2D skybox to lerp to.  0 is no fog, 1 is fully fogged.</p>
+</li>
+<li>
+<p>SetMaxDensityLerpTo &lt;<code>Float</code>&gt;<br>
+<!-- -->Set the current max density to lerp to.  0 is no fog, 1 is fully fogged.</p>
+</li>
+<li>
+<p>StartFogTransition &lt;<code>Void</code>&gt;<br>
+<!-- -->Start fog transition.</p>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Outputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>OnUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser1 input.</p>
+</li>
+<li>
+<p>OnUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser2 input.</p>
+</li>
+<li>
+<p>OnUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser3 input.</p>
+</li>
+<li>
+<p>OnUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser4 input.</p>
+</li>
+<li>
+<p>OnKilled &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the entity is killed and removed from the game. Parameter is the inflictor.</p>
+</li>
+</ul></div></div></details></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>

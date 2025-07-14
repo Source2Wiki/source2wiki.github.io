@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/snd_sound_area_sphere-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="og:description" content="A community driven documentation for everything Source2."><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/snd_sound_area_sphere-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/snd_sound_area_sphere-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/snd_sound_area_sphere-cs2" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.d0cd197a.css">
+<script src="/assets/js/runtime~main.b449d1f3.js" defer="defer"></script>
+<script src="/assets/js/main.1ea4389c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Source2 Wiki</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col"><article><img src="data:image/png;base64,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" alt="snd_sound_area_sphere icon" style="height:80px">
+<p>Point Entity</p>
+<p>Creates a spherical Sound Area</p>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Keyvalues</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p><strong>Sound Area Type</strong> (<code>soundAreaType</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->Name of the type of Sound Area</p>
+</li>
+<li>
+<p><strong>Start Disabled</strong> (<code>startDisabled</code>) &lt;<code>Boolean</code>&gt;</p>
+</li>
+<li>
+<p><strong>Entity Scripts</strong> (<code>vscripts</code>) &lt;<code>ScriptList</code>&gt;<br>
+<!-- -->Name(s) of script files that are executed after all entities have spawned.</p>
+</li>
+<li>
+<p><strong>Name</strong> (<code>targetname</code>) &lt;<code>TargetSource</code>&gt;<br>
+<!-- -->The name that other entities refer to this entity by.</p>
+</li>
+<li>
+<p><strong>Sound Area Radius</strong> (<code>areaRadius</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The radius of the Sound Area</p>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Inputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>Enable &lt;<code>Void</code>&gt;<br>
+<!-- -->Enable the entity</p>
+</li>
+<li>
+<p>Disable &lt;<code>Void</code>&gt;<br>
+<!-- -->Disable the entity</p>
+</li>
+<li>
+<p>RunScriptFile &lt;<code>String</code>&gt;<br>
+<!-- -->Load and execute a script file</p>
+</li>
+<li>
+<p>RunScriptCode &lt;<code>String</code>&gt;<br>
+<!-- -->Execute a fragment of script code</p>
+</li>
+<li>
+<p>CallScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Call a script function</p>
+</li>
+<li>
+<p>CallPrivateScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function from this entity&#x27;s private script scope.</p>
+</li>
+<li>
+<p>CallGlobalScriptFunction &lt;<code>String</code>&gt;<br>
+<!-- -->Calls a script function in the global script scope.</p>
+</li>
+<li>
+<p>Kill &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity from the world.</p>
+</li>
+<li>
+<p>KillHierarchy &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity and all its children from the world.</p>
+</li>
+<li>
+<p>KillConstrained &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity, all its children, and anything constrained to it, from the world.</p>
+</li>
+<li>
+<p>AddOutput &lt;<code>String</code>&gt;<br>
+<!-- -->Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname&gt;inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.</p>
+</li>
+<li>
+<p>FireUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser1 output to be fired.</p>
+</li>
+<li>
+<p>FireUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser2 output to be fired.</p>
+</li>
+<li>
+<p>FireUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser3 output to be fired.</p>
+</li>
+<li>
+<p>FireUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Causes this entity&#x27;s OnUser4 output to be fired.</p>
+</li>
+</ul></div></div></details>
+<details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Outputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
+<li>
+<p>OnUser1 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser1 input.</p>
+</li>
+<li>
+<p>OnUser2 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser2 input.</p>
+</li>
+<li>
+<p>OnUser3 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser3 input.</p>
+</li>
+<li>
+<p>OnUser4 &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired in response to FireUser4 input.</p>
+</li>
+<li>
+<p>OnKilled &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when the entity is killed and removed from the game. Parameter is the inflictor.</p>
+</li>
+</ul></div></div></details></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"></div></footer></div>
+</body>
+</html>

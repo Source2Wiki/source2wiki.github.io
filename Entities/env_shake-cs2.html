@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/env_shake-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/env_shake-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_shake-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_shake-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.f3a76cd0.css">
-<script src="/assets/js/runtime~main.5f8084dc.js" defer="defer"></script>
-<script src="/assets/js/main.753acab6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d8ecdd1f.js" defer="defer"></script>
+<script src="/assets/js/main.a30c910d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -26,24 +26,24 @@
 <!-- -->The name of this entity&#x27;s parent in the movement hierarchy. Entities with parents move with their parent.</p>
 </li>
 <li>
-<p><strong>Parent Model Bone/Attachment Name</strong> (<code>parentAttachmentName</code>) &lt;<code>ParentAttachment</code>&gt;<br>
-<!-- -->The name of the bone or attachment to attach to on the entity&#x27;s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.</p>
+<p><strong>Parent Bone/Attachment Name</strong> (<code>parentAttachmentName</code>) &lt;<code>ParentAttachment</code>&gt;<br>
+<!-- -->The name of the bone or attachment to attach to on the entity&#x27;s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if &#x27;Use Local Transform&#x27; is NOT specified (in that case local transform will be identity)</p>
 </li>
 <li>
-<p><strong>Model Attachment position offset</strong> (<code>local.origin</code>) &lt;<code>Vector</code>&gt;<br>
+<p><strong>Use Local Transform</strong> (<code>useLocalOffset</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.</p>
+</li>
+<li>
+<p><strong>Local Origin</strong> (<code>local.origin</code>) &lt;<code>Vector</code>&gt;<br>
 <!-- -->Offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
 </li>
 <li>
-<p><strong>Model Attachment angular offset</strong> (<code>local.angles</code>) &lt;<code>Angle</code>&gt;<br>
+<p><strong>Local Angles</strong> (<code>local.angles</code>) &lt;<code>Angle</code>&gt;<br>
 <!-- -->Angular offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
 </li>
 <li>
-<p><strong>Model Attachment scale</strong> (<code>local.scales</code>) &lt;<code>Vector</code>&gt;<br>
+<p><strong>Local Scale</strong> (<code>local.scales</code>) &lt;<code>Vector</code>&gt;<br>
 <!-- -->Scale in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
-</li>
-<li>
-<p><strong>Use Model Attachment Offset</strong> (<code>useLocalOffset</code>) &lt;<code>Boolean</code>&gt;<br>
-<!-- -->Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.</p>
 </li>
 <li>
 <p><strong>Entity Scripts</strong> (<code>vscripts</code>) &lt;<code>ScriptList</code>&gt;<br>

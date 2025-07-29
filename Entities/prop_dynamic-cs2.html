@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/prop_dynamic-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/prop_dynamic-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_dynamic-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_dynamic-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.f3a76cd0.css">
-<script src="/assets/js/runtime~main.5f8084dc.js" defer="defer"></script>
-<script src="/assets/js/main.753acab6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d8ecdd1f.js" defer="defer"></script>
+<script src="/assets/js/main.a30c910d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -157,8 +157,6 @@
 <ul>
 <li>Normal</li>
 <li>No Gibs</li>
-<li>Full Gibs on All Platforms</li>
-<li>Reduced gibs</li>
 </ul>
 </li>
 <li>
@@ -259,24 +257,24 @@
 <!-- -->The name of this entity&#x27;s parent in the movement hierarchy. Entities with parents move with their parent.</p>
 </li>
 <li>
-<p><strong>Parent Model Bone/Attachment Name</strong> (<code>parentAttachmentName</code>) &lt;<code>ParentAttachment</code>&gt;<br>
-<!-- -->The name of the bone or attachment to attach to on the entity&#x27;s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.</p>
+<p><strong>Parent Bone/Attachment Name</strong> (<code>parentAttachmentName</code>) &lt;<code>ParentAttachment</code>&gt;<br>
+<!-- -->The name of the bone or attachment to attach to on the entity&#x27;s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if &#x27;Use Local Transform&#x27; is NOT specified (in that case local transform will be identity)</p>
 </li>
 <li>
-<p><strong>Model Attachment position offset</strong> (<code>local.origin</code>) &lt;<code>Vector</code>&gt;<br>
+<p><strong>Use Local Transform</strong> (<code>useLocalOffset</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.</p>
+</li>
+<li>
+<p><strong>Local Origin</strong> (<code>local.origin</code>) &lt;<code>Vector</code>&gt;<br>
 <!-- -->Offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
 </li>
 <li>
-<p><strong>Model Attachment angular offset</strong> (<code>local.angles</code>) &lt;<code>Angle</code>&gt;<br>
+<p><strong>Local Angles</strong> (<code>local.angles</code>) &lt;<code>Angle</code>&gt;<br>
 <!-- -->Angular offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
 </li>
 <li>
-<p><strong>Model Attachment scale</strong> (<code>local.scales</code>) &lt;<code>Vector</code>&gt;<br>
+<p><strong>Local Scale</strong> (<code>local.scales</code>) &lt;<code>Vector</code>&gt;<br>
 <!-- -->Scale in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
-</li>
-<li>
-<p><strong>Use Model Attachment Offset</strong> (<code>useLocalOffset</code>) &lt;<code>Boolean</code>&gt;<br>
-<!-- -->Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.</p>
 </li>
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
@@ -331,6 +329,18 @@
 <li>
 <p><strong>Animate on server in multiplayer</strong> (<code>AnimateOnServer</code>) &lt;<code>Boolean</code>&gt;<br>
 <!-- -->Enable this to animate on the server in multiplayer games, such as for props with triggers parented to attachment points. Use sparingly as there is a performance cost.</p>
+</li>
+<li>
+<p><strong>interactAs</strong> (<code>interactAs</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to interact as</p>
+</li>
+<li>
+<p><strong>interactWith</strong> (<code>interactWith</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to interact with</p>
+</li>
+<li>
+<p><strong>interactExclude</strong> (<code>interactExclude</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to not collide with</p>
 </li>
 <li>
 <p><strong>Lighting Origin</strong> (<code>lightingorigin</code>) &lt;<code>TargetDestination</code>&gt;<br>
@@ -550,6 +560,10 @@
 <p>SetAnimGraphParameter &lt;<code>String</code>&gt;<br>
 <!-- -->Set an animation graph parameter Format: &lt;name=value&gt;</p>
 </li>
+<li>
+<p>SetRagdollProfile &lt;<code>String</code>&gt;<br>
+<!-- -->Sets the active ragdoll profile.</p>
+</li>
 </ul></div></div></details>
 <details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Outputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -571,6 +585,10 @@
 <li>
 <p>OnKilled &lt;<code>Void</code>&gt;<br>
 <!-- -->Fired when the entity is killed and removed from the game. Parameter is the inflictor.</p>
+</li>
+<li>
+<p>OnStartDeath &lt;<code>Void</code>&gt;<br>
+<!-- -->Fired when this prop has begun dying (breaking) before other death-related callbacks.</p>
 </li>
 <li>
 <p>OnBreak &lt;<code>Void</code>&gt;<br>

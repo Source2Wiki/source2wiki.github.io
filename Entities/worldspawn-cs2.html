@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/worldspawn-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/worldspawn-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/worldspawn-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/worldspawn-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.f3a76cd0.css">
-<script src="/assets/js/runtime~main.5f8084dc.js" defer="defer"></script>
-<script src="/assets/js/main.753acab6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d8ecdd1f.js" defer="defer"></script>
+<script src="/assets/js/main.a30c910d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -59,22 +59,6 @@
 <!-- -->Minimum number of pixels wide at which the prop is visible (0 = don&#x27;t fade out). This number is ignored if the prop has a specific fade distance specified.</p>
 </li>
 <li>
-<p><strong>VR Chaperone</strong> (<code>vrchaperone</code>) &lt;<code>Choices</code>&gt;</p>
-<ul>
-<li>Chaperone</li>
-<li>Chaperone + Safe Zone</li>
-<li>No Chaperone</li>
-</ul>
-</li>
-<li>
-<p><strong>VR Movement</strong> (<code>vrmovement</code>) &lt;<code>Choices</code>&gt;</p>
-<ul>
-<li>None</li>
-<li>Teleport</li>
-<li>Teleport (w/non-up floor)</li>
-</ul>
-</li>
-<li>
 <p><strong>Maximum Lightmap Resolution</strong> (<code>max_lightmap_resolution</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
 <li>No Maximum</li>
@@ -100,13 +84,21 @@
 </ul>
 </li>
 <li>
-<p><strong>Grid Type</strong> (<code>steamaudio_reverb_grid_type</code>) &lt;<code>Choices</code>&gt;<br>
-<b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br><b>Manual Grid</b>: Use manually generated probes in the map.<br><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.</p>
+<p><strong>Generation Type</strong> (<code>steamaudio_reverb_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
+<b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
 <ul>
-<li>Uniform Floor</li>
-<li>Manual Grid</li>
-<li>NavMesh Grid</li>
+<li>Automatic, Everywhere</li>
+<li>Automatic, Use Probe Generation Volumes</li>
+<li>Manual</li>
 </ul>
+</li>
+<li>
+<p><strong>Filter Using Probe Exclusion Volumes</strong> (<code>steamaudio_reverb_filter_volumes</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Don&#x27;t generate probes inside Probe Exclusion Volumes that have been placed in the map.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
+</li>
+<li>
+<p><strong>Filter Using NavMesh</strong> (<code>steamaudio_reverb_filter_navmesh</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Only generate probes that are near the nav mesh.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
 </li>
 <li>
 <p><strong>Grid Spacing</strong> (<code>steamaudio_reverb_grid_spacing</code>) &lt;<code>Float</code>&gt;<br>
@@ -133,6 +125,18 @@
 <!-- -->The Ambisonic order of the IRs generated when baking reflections or reverb. Increasing this value results in more accurate directional variation of reflected sound, at the cost of increased disk space usage.</p>
 </li>
 <li>
+<p><strong>Enable Clustering</strong> (<code>steamaudio_reverb_clustering_enable</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Reduces the number of probes generated by combining nearby probes that are likely to have similar reverbs.</p>
+</li>
+<li>
+<p><strong>Cube Map Resolution</strong> (<code>steamaudio_reverb_clustering_cubemap_resolution</code>) &lt;<code>Integer</code>&gt;<br>
+<!-- -->Number of rays traced per side for each face of the depth cube map computed for each probe.</p>
+</li>
+<li>
+<p><strong>Depth Similarity Threshold</strong> (<code>steamaudio_reverb_clustering_depth_threshold</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->If average depth map values at two probes are within this distance (in meters), then the probes are considered similar.</p>
+</li>
+<li>
 <p><strong>Rebake Option</strong> (<code>steamaudio_pathing_rebake_option</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Cleanup</b>: Pathing bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br><b>Manual</b>: Pathing needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br><b>Auto</b>: Pathing is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.</p>
 <ul>
@@ -142,13 +146,21 @@
 </ul>
 </li>
 <li>
-<p><strong>Grid Type</strong> (<code>steamaudio_pathing_grid_type</code>) &lt;<code>Choices</code>&gt;<br>
-<b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br><b>Manual Grid</b>: Use manually generated probes in the map.<br><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.</p>
+<p><strong>Generation Type</strong> (<code>steamaudio_pathing_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
+<b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
 <ul>
-<li>Uniform Floor</li>
-<li>Manual Grid</li>
-<li>NavMesh Grid</li>
+<li>Automatic, Everywhere</li>
+<li>Automatic, Use Probe Generation Volumes</li>
+<li>Manual</li>
 </ul>
+</li>
+<li>
+<p><strong>Filter Using Probe Exclusion Volumes</strong> (<code>steamaudio_pathing_filter_volumes</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Don&#x27;t generate probes inside Probe Exclusion Volumes that have been placed in the map.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
+</li>
+<li>
+<p><strong>Filter Using NavMesh</strong> (<code>steamaudio_pathing_filter_navmesh</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Only generate probes that are near the nav mesh.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
 </li>
 <li>
 <p><strong>Grid Spacing</strong> (<code>steamaudio_pathing_grid_spacing</code>) &lt;<code>Float</code>&gt;<br>
@@ -173,6 +185,68 @@
 <li>
 <p><strong>Baking Path Range</strong> (<code>steamaudio_pathing_visibility_pathrange</code>) &lt;<code>Float</code>&gt;<br>
 <!-- -->If the distance (in meters) between two probes is greater than this value, the probes are considered to not have any path between them. Increasing this value allows sound to propagate over greater distances, at the cost of increased bake times and memory usage.</p>
+</li>
+<li>
+<p><strong>Rebake Option</strong> (<code>steamaudio_customdata_rebake_option</code>) &lt;<code>Choices</code>&gt;<br>
+<b>Cleanup</b>: Custom bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br><b>Manual</b>: Custom data needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br><b>Auto</b>: Custom data is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.</p>
+<ul>
+<li>Cleanup</li>
+<li>Manual</li>
+<li>Auto</li>
+</ul>
+</li>
+<li>
+<p><strong>Generation Type</strong> (<code>steamaudio_customdata_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
+<b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
+<ul>
+<li>Automatic, Everywhere</li>
+<li>Automatic, Use Probe Generation Volumes</li>
+<li>Manual</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter Using Probe Exclusion Volumes</strong> (<code>steamaudio_customdata_filter_volumes</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Don&#x27;t generate probes inside Probe Exclusion Volumes that have been placed in the map.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
+</li>
+<li>
+<p><strong>Filter Using NavMesh</strong> (<code>steamaudio_customdata_filter_navmesh</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Only generate probes that are near the nav mesh.<br>(Only used if Generation Type is set to Automatic, Everywhere.)</p>
+</li>
+<li>
+<p><strong>Grid Spacing</strong> (<code>steamaudio_customdata_grid_spacing</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The horizontal distance (in meters) between adjacent probes.</p>
+</li>
+<li>
+<p><strong>Height Above Floor</strong> (<code>steamaudio_customdata_height_above_floor</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->The height (in meters) above the floor at which probes should be placed..</p>
+</li>
+<li>
+<p><strong>Bake Occlusion</strong> (<code>steamaudio_customdata_bake_occlusion</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Bake custom occlusion data between probe pairs.</p>
+</li>
+<li>
+<p><strong>Bake Dimensions</strong> (<code>steamaudio_customdata_bake_dimensions</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Bake occlusion dimensions data (size and inside outside) per probe.</p>
+</li>
+<li>
+<p><strong>Bake Materials</strong> (<code>steamaudio_customdata_bake_materials</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Bake custom materials data (top 3 nearby materials) per probe.</p>
+</li>
+<li>
+<p><strong>Occlusion: Simulate Pathing</strong> (<code>steamaudio_customdata_occlusion_pathing</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Simulate pathing when computing baked occlusion.</p>
+</li>
+<li>
+<p><strong>Occlusion: Simulate Reflection</strong> (<code>steamaudio_customdata_occlusion_reflection</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Simulate reflections when computing baked occlusion.</p>
+</li>
+<li>
+<p><strong>Occlusion: Reflection Num Rays</strong> (<code>steamaudio_customdata_occlusion_reflection_rays</code>) &lt;<code>Integer</code>&gt;<br>
+<!-- -->Number of rays to simulate reflections.</p>
+</li>
+<li>
+<p><strong>Occlusion: Reflection Bounces</strong> (<code>steamaudio_customdata_occlusion_reflection_bounces</code>) &lt;<code>Integer</code>&gt;<br>
+<!-- -->Number of bounces to simulate reflections.</p>
 </li>
 </ul></div></div></details></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title"></div><ul class="footer__items clean-list"><li class="footer__item">
               <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap;">

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/point_template-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/point_template-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/point_template-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/point_template-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.f3a76cd0.css">
-<script src="/assets/js/runtime~main.5f8084dc.js" defer="defer"></script>
-<script src="/assets/js/main.753acab6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d8ecdd1f.js" defer="defer"></script>
+<script src="/assets/js/main.a30c910d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -29,6 +29,30 @@
 <li>No</li>
 <li>Yes</li>
 </ul>
+</li>
+<li>
+<p><strong>Parent</strong> (<code>parentname</code>) &lt;<code>TargetDestination</code>&gt;<br>
+<!-- -->The name of this entity&#x27;s parent in the movement hierarchy. Entities with parents move with their parent.</p>
+</li>
+<li>
+<p><strong>Parent Bone/Attachment Name</strong> (<code>parentAttachmentName</code>) &lt;<code>ParentAttachment</code>&gt;<br>
+<!-- -->The name of the bone or attachment to attach to on the entity&#x27;s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if &#x27;Use Local Transform&#x27; is NOT specified (in that case local transform will be identity)</p>
+</li>
+<li>
+<p><strong>Use Local Transform</strong> (<code>useLocalOffset</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.</p>
+</li>
+<li>
+<p><strong>Local Origin</strong> (<code>local.origin</code>) &lt;<code>Vector</code>&gt;<br>
+<!-- -->Offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
+</li>
+<li>
+<p><strong>Local Angles</strong> (<code>local.angles</code>) &lt;<code>Angle</code>&gt;<br>
+<!-- -->Angular offset in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
+</li>
+<li>
+<p><strong>Local Scale</strong> (<code>local.scales</code>) &lt;<code>Vector</code>&gt;<br>
+<!-- -->Scale in the local space of the parent model&#x27;s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.</p>
 </li>
 <li>
 <p><strong>Entity Scripts</strong> (<code>vscripts</code>) &lt;<code>ScriptList</code>&gt;<br>
@@ -268,6 +292,26 @@
 </ul></div></div></details>
 <details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Inputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
+<p>SetParent &lt;<code>TargetDestination</code>&gt;<br>
+<!-- -->Changes the entity&#x27;s parent in the movement hierarchy.</p>
+</li>
+<li>
+<p>SetParentAttachment &lt;<code>String</code>&gt;<br>
+<!-- -->Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment.</p>
+</li>
+<li>
+<p>SetParentAttachmentMaintainOffset &lt;<code>String</code>&gt;<br>
+<!-- -->Change this entity to attach to a specific attachment point on it&#x27;s parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it&#x27;s position relative to the parent at the time it is attached.</p>
+</li>
+<li>
+<p>ClearParent &lt;<code>Void</code>&gt;<br>
+<!-- -->Removes this entity from the the movement hierarchy, leaving it free to move independently.</p>
+</li>
+<li>
+<p>FollowEntity &lt;<code>String</code>&gt;<br>
+<!-- -->Bone merges this entity to a parent entity. Call again passing nothing to end the bone merge.</p>
+</li>
+<li>
 <p>RunScriptFile &lt;<code>String</code>&gt;<br>
 <!-- -->Load and execute a script file</p>
 </li>
@@ -320,12 +364,10 @@
 <!-- -->Causes this entity&#x27;s OnUser4 output to be fired.</p>
 </li>
 <li>
-<p>ForceSpawn &lt;<code>Void</code>&gt;<br>
-<!-- -->Spawn an instance of the template at the original position.</p>
+<p>ForceSpawn &lt;<code>Cpp</code>&gt;\</p>
 </li>
 <li>
-<p>DeleteCreatedSpawnGroups &lt;<code>Void</code>&gt;<br>
-<!-- -->Deletes all spawn groups created by the template. Only works if you use asynchronous spawn and INSERT_INTO_NEWLY_CREATED_SPAWN_GROUP.</p>
+<p>DeleteCreatedSpawnGroups &lt;<code>Cpp</code>&gt;\</p>
 </li>
 </ul></div></div></details>
 <details open="" class="details_lb9f alert alert--info details_b_Ee" data-collapsed="false"><summary><h2>Outputs</h2></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -350,8 +392,7 @@
 <!-- -->Fired when the entity is killed and removed from the game. Parameter is the inflictor.</p>
 </li>
 <li>
-<p>OnEntitySpawned &lt;<code>Void</code>&gt;<br>
-<!-- -->Fired after spawning an instance of this template.</p>
+<p>OnEntitySpawned &lt;<code>Cpp</code>&gt;\</p>
 </li>
 </ul></div></div></details></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title"></div><ul class="footer__items clean-list"><li class="footer__item">
               <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap;">

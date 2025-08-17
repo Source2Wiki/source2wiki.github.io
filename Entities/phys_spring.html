@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">phys_spring | Source2 Wiki</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/phys_spring"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="phys_spring | Source2 Wiki"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/phys_spring"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_spring" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_spring" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"phys_spring","item":"https://source2wiki.github.io/Entities/phys_spring"}]}</script><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.feb4d67b.css">
-<script src="/assets/js/runtime~main.e7f80ede.js" defer="defer"></script>
-<script src="/assets/js/main.202a49a3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.99545560.js" defer="defer"></script>
+<script src="/assets/js/main.7866ec8c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -34,6 +34,7 @@
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
 <li>Force only on stretch</li>
+<li>Enable collision</li>
 </ul>
 </li>
 <li>
@@ -48,7 +49,11 @@
 </li>
 <li>
 <p><strong>Length</strong> (<code>length</code>) &lt;<code>String</code>&gt;<br>
-<!-- -->How long the spring would be if it was at rest (nothing hanging on it or attached). 0 means the length of the helpr .</p>
+<!-- -->How long the spring would be if it was at rest (nothing hanging on it or attached). 0 means the length of the helper.</p>
+</li>
+<li>
+<p><strong>Length Scale</strong> (<code>lengthscale</code>) &lt;<code>Float</code>&gt;<br>
+<!-- -->Scale on the rest length. You can use this to easily make the spring start out stretched. e.g. a value of 0.75 here means the spring will spawn stretched by ~25%.</p>
 </li>
 <li>
 <p><strong>Frequency</strong> (<code>frequency</code>) &lt;<code>String</code>&gt;<br>

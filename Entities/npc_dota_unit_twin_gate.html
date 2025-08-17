@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">npc_dota_unit_twin_gate | Source2 Wiki</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/npc_dota_unit_twin_gate"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="npc_dota_unit_twin_gate | Source2 Wiki"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/npc_dota_unit_twin_gate"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_dota_unit_twin_gate" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_dota_unit_twin_gate" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"npc_dota_unit_twin_gate","item":"https://source2wiki.github.io/Entities/npc_dota_unit_twin_gate"}]}</script><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.feb4d67b.css">
-<script src="/assets/js/runtime~main.e7f80ede.js" defer="defer"></script>
-<script src="/assets/js/main.202a49a3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.99545560.js" defer="defer"></script>
+<script src="/assets/js/main.7866ec8c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -450,6 +450,18 @@
 <!-- -->Enable this to animate on the server in multiplayer games, such as for props with triggers parented to attachment points. Use sparingly as there is a performance cost.</p>
 </li>
 <li>
+<p><strong>interactAs</strong> (<code>interactAs</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to interact as</p>
+</li>
+<li>
+<p><strong>interactWith</strong> (<code>interactWith</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to interact with</p>
+</li>
+<li>
+<p><strong>interactExclude</strong> (<code>interactExclude</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->comma-separated list of interaction layers to not collide with</p>
+</li>
+<li>
 <p><strong>Lighting Origin</strong> (<code>lightingorigin</code>) &lt;<code>TargetDestination</code>&gt;<br>
 <!-- -->Select an entity to specify a location to sample lighting from, instead of using this entity&#x27;s origin.</p>
 </li>
@@ -720,6 +732,9 @@
 <li>
 <p>OnIgnite &lt;<code>Void</code>&gt;<br>
 <!-- -->Fired when this object catches fire.</p>
+</li>
+<li>
+<p>OnDestructiblePartDestroyed &lt;<code>Cpp</code>&gt;\</p>
 </li>
 <li>
 <p>OnAnimationBegun &lt;<code>Void</code>&gt;<br>

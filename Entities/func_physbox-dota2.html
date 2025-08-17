@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/func_physbox-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/func_physbox-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/func_physbox-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/func_physbox-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.feb4d67b.css">
-<script src="/assets/js/runtime~main.e7f80ede.js" defer="defer"></script>
-<script src="/assets/js/main.202a49a3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.99545560.js" defer="defer"></script>
+<script src="/assets/js/main.7866ec8c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -307,6 +307,10 @@
 </ul>
 </li>
 <li>
+<p><strong>Add Modifier</strong> (<code>add_modifier</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->Will add this modifier when the entity spawns.</p>
+</li>
+<li>
 <p><strong>Impact Damage Type</strong> (<code>Damagetype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
 <li>Disabled</li>
@@ -315,12 +319,16 @@
 </ul>
 </li>
 <li>
+<p><strong>Mass Override</strong> (<code>gamemass</code>) &lt;<code>Integer</code>&gt;<br>
+<!-- -->Override the mass of the object instead of calculating it based on the size / shape and material.</p>
+</li>
+<li>
 <p><strong>Mass Scale</strong> (<code>massScale</code>) &lt;<code>Float</code>&gt;<br>
 <!-- -->A scale multiplier for the object&#x27;s mass. 0 = use auto-calculated mass based on the object&#x27;s size / shape and material</p>
 </li>
 <li>
-<p><strong>Mass Override</strong> (<code>gamemass</code>) &lt;<code>Integer</code>&gt;<br>
-<!-- -->Override the mass of the object instead of calculating it based on the size / shape and material.</p>
+<p><strong>Center of Mass Offset</strong> (<code>masscenteroffset</code>) &lt;<code>Vector</code>&gt;<br>
+<!-- -->Offset in local space applied to the object&#x27;s center of mass.</p>
 </li>
 <li>
 <p><strong>Buoyancy Scale</strong> (<code>buoyancyscale</code>) &lt;<code>Float</code>&gt;<br>

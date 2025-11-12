@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.cbb3238f.css">
-<script src="/assets/js/runtime~main.c62700ef.js" defer="defer"></script>
-<script src="/assets/js/main.4f568d7c.js" defer="defer"></script>
+<title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/phys_slideconstraint-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.f94667ee.css">
+<script src="/assets/js/runtime~main.8cfb910d.js" defer="defer"></script>
+<script src="/assets/js/main.6f753c38.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -79,7 +79,6 @@
 <ul>
 <li>No Collision until break</li>
 <li>Start inactive</li>
-<li>Change mass to keep stable attachment to world</li>
 <li>Do not connect entities until turned on</li>
 </ul>
 </li>
@@ -88,6 +87,14 @@
 </li>
 <li>
 <p><strong>Entity 2</strong> (<code>attach2</code>) &lt;<code>TargetDestination</code>&gt;</p>
+</li>
+<li>
+<p><strong>Entity 1 Attachment Name</strong> (<code>attachment1</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->If set, we&#x27;ll attach to the body / location corresponding to this attachment.</p>
+</li>
+<li>
+<p><strong>Entity 2 Attachment Name</strong> (<code>attachment2</code>) &lt;<code>String</code>&gt;<br>
+<!-- -->If set, we&#x27;ll attach to the body / location corresponding to this attachment.</p>
 </li>
 <li>
 <p><strong>Impulse Limit to Break (kg)</strong> (<code>forcelimit</code>) &lt;<code>Float</code>&gt;<br>
@@ -104,6 +111,10 @@
 <li>
 <p><strong>Follow teleport distance</strong> (<code>teleportfollowdistance</code>) &lt;<code>Float</code>&gt;<br>
 <!-- -->If one object teleports more than this many units away it will cause the other constrained object to teleport to an appropriate relative position.</p>
+</li>
+<li>
+<p><strong>Treat Entity 1 As Infinite Mass</strong> (<code>treat_entity1_as_infinite_mass</code>) &lt;<code>Boolean</code>&gt;<br>
+<!-- -->If true, the joint will not affect the motion of Entity 1. Entity 2 will just follow Entity 1.</p>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>

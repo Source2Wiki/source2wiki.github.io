@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">prop_dynamic_ornament | Source2 Wiki</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/prop_dynamic_ornament"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="prop_dynamic_ornament | Source2 Wiki"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/prop_dynamic_ornament"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_dynamic_ornament" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_dynamic_ornament" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"prop_dynamic_ornament","item":"https://source2wiki.github.io/Entities/prop_dynamic_ornament"}]}</script><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -31,10 +31,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -57,41 +57,41 @@
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render FX</strong> (<code>renderfx</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Slow Wide Pulse</li>
-<li>Fast Wide Pulse</li>
-<li>Slow Strobe</li>
-<li>Fast Strobe</li>
-<li>Faster Strobe</li>
-<li>Slow Flicker</li>
-<li>Fast Flicker</li>
-<li>Slow Fade Away</li>
-<li>Fast Fade Away</li>
-<li>Slow Become Solid</li>
-<li>Fast Become Solid</li>
-<li>Constant Glow</li>
-<li>Distort</li>
-<li>Hologram (Distort + fade)</li>
-<li>Cull By Distance (TEST)</li>
-<li>Spotlight FX</li>
-<li>Fade Near</li>
+<li>Normal (<code>kRenderFxNone</code>)</li>
+<li>Slow Pulse (<code>kRenderFxPulseSlow</code>)</li>
+<li>Fast Pulse (<code>kRenderFxPulseFast</code>)</li>
+<li>Slow Wide Pulse (<code>kRenderFxPulseSlowWide</code>)</li>
+<li>Fast Wide Pulse (<code>kRenderFxPulseFastWide</code>)</li>
+<li>Slow Strobe (<code>kRenderFxStrobeSlow</code>)</li>
+<li>Fast Strobe (<code>kRenderFxStrobeFast</code>)</li>
+<li>Faster Strobe (<code>kRenderFxStrobeFaster</code>)</li>
+<li>Slow Flicker (<code>kRenderFxFlickerSlow</code>)</li>
+<li>Fast Flicker (<code>kRenderFxFlickerFast</code>)</li>
+<li>Slow Fade Away (<code>kRenderFxFadeSlow</code>)</li>
+<li>Fast Fade Away (<code>kRenderFxFadeFast</code>)</li>
+<li>Slow Become Solid (<code>kRenderFxSolidSlow</code>)</li>
+<li>Fast Become Solid (<code>kRenderFxSolidFast</code>)</li>
+<li>Constant Glow (<code>kRenderFxNoDissipation</code>)</li>
+<li>Distort (<code>15</code>)</li>
+<li>Hologram (Distort + fade) (<code>16</code>)</li>
+<li>Cull By Distance (TEST) (<code>23</code>)</li>
+<li>Spotlight FX (<code>24</code>)</li>
+<li>Fade Near (<code>26</code>)</li>
 </ul>
 </li>
 <li>
@@ -117,10 +117,10 @@
 <p><strong>Culling Behaviour</strong> (<code>object_culling</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Modifies culling behaviour when the object is small / distant</p>
 <ul>
-<li>Default</li>
-<li>Smaller than default</li>
-<li>Much smaller than default</li>
-<li>When extremely small</li>
+<li>Default (<code>0</code>)</li>
+<li>Smaller than default (<code>1</code>)</li>
+<li>Much smaller than default (<code>2</code>)</li>
+<li>When extremely small (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -131,9 +131,9 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Determines if this geometry be considered static &amp; cast shadows/bounce light when baking lightmaps?</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -160,8 +160,8 @@
 <p><strong>Performance Mode</strong> (<code>PerformanceMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</p>
 <ul>
-<li>Normal</li>
-<li>No Gibs</li>
+<li>Normal (<code>PM_NORMAL</code>)</li>
+<li>No Gibs (<code>PM_NO_GIBS</code>)</li>
 </ul>
 </li>
 <li>
@@ -170,19 +170,19 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Break on Touch</li>
-<li>Break on Pressure</li>
-<li>Use Hitboxes for Renderbox</li>
-<li>Start with collision disabled</li>
-<li>Set to Nav Ignore</li>
-<li>Set to Local-Nav Ignore (NPC will not try to avoid this entity)</li>
-<li>Start Asleep</li>
-<li>Don&#x27;t take physics damage</li>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Motion Disabled</li>
-<li>Prevent motion enable on player bump</li>
-<li>Debris with trigger interaction</li>
-<li>Force non-solid to players</li>
+<li>Break on Touch (<code>16</code>)</li>
+<li>Break on Pressure (<code>32</code>)</li>
+<li>Use Hitboxes for Renderbox (<code>64</code>)</li>
+<li>Start with collision disabled (<code>256</code>)</li>
+<li>Set to Nav Ignore (<code>512</code>)</li>
+<li>Set to Local-Nav Ignore (NPC will not try to avoid this entity) (<code>1024</code>)</li>
+<li>Start Asleep (<code>1</code>)</li>
+<li>Don&#x27;t take physics damage (<code>2</code>)</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Motion Disabled (<code>8</code>)</li>
+<li>Prevent motion enable on player bump (<code>1024</code>)</li>
+<li>Debris with trigger interaction (<code>4096</code>)</li>
+<li>Force non-solid to players (<code>8192</code>)</li>
 </ul>
 </li>
 <li>
@@ -201,10 +201,10 @@
 <p><strong>Contents Type</strong> (<code>BreakableContentsType</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Set the type of contents inside this breakable.</p>
 <ul>
-<li>Default</li>
-<li>Empty</li>
-<li>Prop Group Override</li>
-<li>Particle System Override</li>
+<li>Default (<code>BC_DEFAULT</code>)</li>
+<li>Empty (<code>BC_EMPTY</code>)</li>
+<li>Prop Group Override (<code>BC_PROP_GROUP_OVERRIDE</code>)</li>
+<li>Particle System Override (<code>BC_PARTICLE_SYSTEM_OVERRIDE</code>)</li>
 </ul>
 </li>
 <li>
@@ -228,14 +228,14 @@
 <p><strong>Cast Shadows</strong> (<code>disableshadows</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to disable shadow casting from this entity.</p>
 <ul>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -253,8 +253,8 @@
 <li>
 <p><strong>Create Client-Only Entity</strong> (<code>clientSideEntity</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -284,17 +284,17 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Turn Off in Low-Violence</strong> (<code>disablelowviolence</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -308,8 +308,8 @@
 <li>
 <p><strong>Start Animation Loop Mode</strong> (<code>StartingAnimationLoopMode</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Do Not Loop</li>
-<li>Loop</li>
+<li>Do Not Loop (<code>ANIM_LOOP_MODE_NOT_LOOPING</code>)</li>
+<li>Loop (<code>ANIM_LOOP_MODE_LOOPING</code>)</li>
 </ul>
 </li>
 <li>
@@ -319,8 +319,8 @@
 <li>
 <p><strong>Idle Animation Loop Mode</strong> (<code>IdleAnimationLoopMode</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Do Not Loop</li>
-<li>Loop</li>
+<li>Do Not Loop (<code>ANIM_LOOP_MODE_NOT_LOOPING</code>)</li>
+<li>Loop (<code>ANIM_LOOP_MODE_LOOPING</code>)</li>
 </ul>
 </li>
 <li>
@@ -362,10 +362,10 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
@@ -649,10 +649,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -671,41 +671,41 @@
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render FX</strong> (<code>renderfx</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Slow Wide Pulse</li>
-<li>Fast Wide Pulse</li>
-<li>Slow Strobe</li>
-<li>Fast Strobe</li>
-<li>Faster Strobe</li>
-<li>Slow Flicker</li>
-<li>Fast Flicker</li>
-<li>Slow Fade Away</li>
-<li>Fast Fade Away</li>
-<li>Slow Become Solid</li>
-<li>Fast Become Solid</li>
-<li>Constant Glow</li>
-<li>Distort</li>
-<li>Hologram (Distort + fade)</li>
-<li>Cull By Distance (TEST)</li>
-<li>Spotlight FX</li>
-<li>Fade Near</li>
+<li>Normal (<code>kRenderFxNone</code>)</li>
+<li>Slow Pulse (<code>kRenderFxPulseSlow</code>)</li>
+<li>Fast Pulse (<code>kRenderFxPulseFast</code>)</li>
+<li>Slow Wide Pulse (<code>kRenderFxPulseSlowWide</code>)</li>
+<li>Fast Wide Pulse (<code>kRenderFxPulseFastWide</code>)</li>
+<li>Slow Strobe (<code>kRenderFxStrobeSlow</code>)</li>
+<li>Fast Strobe (<code>kRenderFxStrobeFast</code>)</li>
+<li>Faster Strobe (<code>kRenderFxStrobeFaster</code>)</li>
+<li>Slow Flicker (<code>kRenderFxFlickerSlow</code>)</li>
+<li>Fast Flicker (<code>kRenderFxFlickerFast</code>)</li>
+<li>Slow Fade Away (<code>kRenderFxFadeSlow</code>)</li>
+<li>Fast Fade Away (<code>kRenderFxFadeFast</code>)</li>
+<li>Slow Become Solid (<code>kRenderFxSolidSlow</code>)</li>
+<li>Fast Become Solid (<code>kRenderFxSolidFast</code>)</li>
+<li>Constant Glow (<code>kRenderFxNoDissipation</code>)</li>
+<li>Distort (<code>15</code>)</li>
+<li>Hologram (Distort + fade) (<code>16</code>)</li>
+<li>Cull By Distance (TEST) (<code>23</code>)</li>
+<li>Spotlight FX (<code>24</code>)</li>
+<li>Fade Near (<code>26</code>)</li>
 </ul>
 </li>
 <li>
@@ -743,54 +743,54 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How this geometry influences baked lighting.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum CPU Level</strong> (<code>mincpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (low)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (low) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum CPU Level</strong> (<code>maxcpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum GPU Level</strong> (<code>mingpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (very low)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (very low) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum GPU Level</strong> (<code>maxgpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Disable X360</strong> (<code>disableX360</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -817,34 +817,34 @@
 <p><strong>Performance Mode</strong> (<code>PerformanceMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</p>
 <ul>
-<li>Normal</li>
-<li>No Gibs</li>
-<li>Full Gibs on All Platforms</li>
-<li>Reduced gibs</li>
+<li>Normal (<code>PM_NORMAL</code>)</li>
+<li>No Gibs (<code>PM_NO_GIBS</code>)</li>
+<li>Full Gibs on All Platforms (<code>PM_FULL_GIBS</code>)</li>
+<li>Reduced gibs (<code>PM_REDUCED_GIBS</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Break on Touch</li>
-<li>Break on Pressure</li>
-<li>Use Hitboxes for Renderbox</li>
-<li>Start with collision disabled</li>
-<li>Set to NAVIgnore</li>
-<li>Start Asleep</li>
-<li>Don&#x27;t take physics damage</li>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Motion Disabled</li>
-<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction)</li>
-<li>Not affected by rotor wash</li>
-<li>Generate output on +USE</li>
-<li>Prevent pickup</li>
-<li>Prevent motion enable on player bump</li>
-<li>Debris with trigger interaction</li>
-<li>Force non-solid to players</li>
-<li>Enable +use glow effect</li>
-<li>Physgun can ALWAYS pick up. No matter what.</li>
-<li>Important Grabbity Glove target.</li>
+<li>Break on Touch (<code>16</code>)</li>
+<li>Break on Pressure (<code>32</code>)</li>
+<li>Use Hitboxes for Renderbox (<code>64</code>)</li>
+<li>Start with collision disabled (<code>256</code>)</li>
+<li>Set to NAVIgnore (<code>512</code>)</li>
+<li>Start Asleep (<code>1</code>)</li>
+<li>Don&#x27;t take physics damage (<code>2</code>)</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Motion Disabled (<code>8</code>)</li>
+<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction) (<code>64</code>)</li>
+<li>Not affected by rotor wash (<code>128</code>)</li>
+<li>Generate output on +USE  (<code>256</code>)</li>
+<li>Prevent pickup (<code>512</code>)</li>
+<li>Prevent motion enable on player bump (<code>1024</code>)</li>
+<li>Debris with trigger interaction (<code>4096</code>)</li>
+<li>Force non-solid to players (<code>8192</code>)</li>
+<li>Enable +use glow effect (<code>32768</code>)</li>
+<li>Physgun can ALWAYS pick up. No matter what. (<code>1048576</code>)</li>
+<li>Important Grabbity Glove target. (<code>16777216</code>)</li>
 </ul>
 </li>
 <li>
@@ -896,17 +896,17 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Turn Off in Low-Violence</strong> (<code>disablelowviolence</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -976,10 +976,10 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
@@ -1260,10 +1260,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -1286,41 +1286,41 @@
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render FX</strong> (<code>renderfx</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Slow Wide Pulse</li>
-<li>Fast Wide Pulse</li>
-<li>Slow Strobe</li>
-<li>Fast Strobe</li>
-<li>Faster Strobe</li>
-<li>Slow Flicker</li>
-<li>Fast Flicker</li>
-<li>Slow Fade Away</li>
-<li>Fast Fade Away</li>
-<li>Slow Become Solid</li>
-<li>Fast Become Solid</li>
-<li>Constant Glow</li>
-<li>Distort</li>
-<li>Hologram (Distort + fade)</li>
-<li>Cull By Distance (TEST)</li>
-<li>Spotlight FX</li>
-<li>Fade Near</li>
+<li>Normal (<code>kRenderFxNone</code>)</li>
+<li>Slow Pulse (<code>kRenderFxPulseSlow</code>)</li>
+<li>Fast Pulse (<code>kRenderFxPulseFast</code>)</li>
+<li>Slow Wide Pulse (<code>kRenderFxPulseSlowWide</code>)</li>
+<li>Fast Wide Pulse (<code>kRenderFxPulseFastWide</code>)</li>
+<li>Slow Strobe (<code>kRenderFxStrobeSlow</code>)</li>
+<li>Fast Strobe (<code>kRenderFxStrobeFast</code>)</li>
+<li>Faster Strobe (<code>kRenderFxStrobeFaster</code>)</li>
+<li>Slow Flicker (<code>kRenderFxFlickerSlow</code>)</li>
+<li>Fast Flicker (<code>kRenderFxFlickerFast</code>)</li>
+<li>Slow Fade Away (<code>kRenderFxFadeSlow</code>)</li>
+<li>Fast Fade Away (<code>kRenderFxFadeFast</code>)</li>
+<li>Slow Become Solid (<code>kRenderFxSolidSlow</code>)</li>
+<li>Fast Become Solid (<code>kRenderFxSolidFast</code>)</li>
+<li>Constant Glow (<code>kRenderFxNoDissipation</code>)</li>
+<li>Distort (<code>15</code>)</li>
+<li>Hologram (Distort + fade) (<code>16</code>)</li>
+<li>Cull By Distance (TEST) (<code>23</code>)</li>
+<li>Spotlight FX (<code>24</code>)</li>
+<li>Fade Near (<code>26</code>)</li>
 </ul>
 </li>
 <li>
@@ -1346,10 +1346,10 @@
 <p><strong>Culling Behaviour</strong> (<code>object_culling</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Modifies culling behaviour when the object is small / distant</p>
 <ul>
-<li>Default</li>
-<li>Smaller than default</li>
-<li>Much smaller than default</li>
-<li>When extremely small</li>
+<li>Default (<code>0</code>)</li>
+<li>Smaller than default (<code>1</code>)</li>
+<li>Much smaller than default (<code>2</code>)</li>
+<li>When extremely small (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -1360,9 +1360,9 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Determines if this geometry be considered static &amp; cast shadows/bounce light when baking lightmaps?</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -1389,8 +1389,8 @@
 <p><strong>Performance Mode</strong> (<code>PerformanceMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</p>
 <ul>
-<li>Normal</li>
-<li>No Gibs</li>
+<li>Normal (<code>PM_NORMAL</code>)</li>
+<li>No Gibs (<code>PM_NO_GIBS</code>)</li>
 </ul>
 </li>
 <li>
@@ -1399,19 +1399,19 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Break on Touch</li>
-<li>Break on Pressure</li>
-<li>Use Hitboxes for Renderbox</li>
-<li>Start with collision disabled</li>
-<li>Set to Nav Ignore</li>
-<li>Set to Local-Nav Ignore (NPC will not try to avoid this entity)</li>
-<li>Start Asleep</li>
-<li>Don&#x27;t take physics damage</li>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Motion Disabled</li>
-<li>Prevent motion enable on player bump</li>
-<li>Debris with trigger interaction</li>
-<li>Force non-solid to players</li>
+<li>Break on Touch (<code>16</code>)</li>
+<li>Break on Pressure (<code>32</code>)</li>
+<li>Use Hitboxes for Renderbox (<code>64</code>)</li>
+<li>Start with collision disabled (<code>256</code>)</li>
+<li>Set to Nav Ignore (<code>512</code>)</li>
+<li>Set to Local-Nav Ignore (NPC will not try to avoid this entity) (<code>1024</code>)</li>
+<li>Start Asleep (<code>1</code>)</li>
+<li>Don&#x27;t take physics damage (<code>2</code>)</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Motion Disabled (<code>8</code>)</li>
+<li>Prevent motion enable on player bump (<code>1024</code>)</li>
+<li>Debris with trigger interaction (<code>4096</code>)</li>
+<li>Force non-solid to players (<code>8192</code>)</li>
 </ul>
 </li>
 <li>
@@ -1430,10 +1430,10 @@
 <p><strong>Contents Type</strong> (<code>BreakableContentsType</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Set the type of contents inside this breakable.</p>
 <ul>
-<li>Default</li>
-<li>Empty</li>
-<li>Prop Group Override</li>
-<li>Particle System Override</li>
+<li>Default (<code>BC_DEFAULT</code>)</li>
+<li>Empty (<code>BC_EMPTY</code>)</li>
+<li>Prop Group Override (<code>BC_PROP_GROUP_OVERRIDE</code>)</li>
+<li>Particle System Override (<code>BC_PARTICLE_SYSTEM_OVERRIDE</code>)</li>
 </ul>
 </li>
 <li>
@@ -1457,14 +1457,14 @@
 <p><strong>Cast Shadows</strong> (<code>disableshadows</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to disable shadow casting from this entity.</p>
 <ul>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -1482,8 +1482,8 @@
 <li>
 <p><strong>Create Client-Only Entity</strong> (<code>clientSideEntity</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -1513,17 +1513,17 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Turn Off in Low-Violence</strong> (<code>disablelowviolence</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -1537,11 +1537,11 @@
 <li>
 <p><strong>Start Animation Loop Mode</strong> (<code>StartingAnimationLoopMode</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Do Not Loop</li>
-<li>Loop</li>
-<li>Do Not Loop</li>
-<li>Loop</li>
-<li>Use Sequence Settings</li>
+<li>Do Not Loop (<code>ANIM_LOOP_MODE_NOT_LOOPING</code>)</li>
+<li>Loop (<code>ANIM_LOOP_MODE_LOOPING</code>)</li>
+<li>Do Not Loop (<code>ANIM_LOOP_MODE_NOT_LOOPING</code>)</li>
+<li>Loop (<code>ANIM_LOOP_MODE_LOOPING</code>)</li>
+<li>Use Sequence Settings (<code>ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS</code>)</li>
 </ul>
 </li>
 <li>
@@ -1551,8 +1551,8 @@
 <li>
 <p><strong>Idle Animation Loop Mode</strong> (<code>IdleAnimationLoopMode</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Do Not Loop</li>
-<li>Loop</li>
+<li>Do Not Loop (<code>ANIM_LOOP_MODE_NOT_LOOPING</code>)</li>
+<li>Loop (<code>ANIM_LOOP_MODE_LOOPING</code>)</li>
 </ul>
 </li>
 <li>
@@ -1594,10 +1594,10 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
@@ -1881,10 +1881,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -1903,41 +1903,41 @@
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render FX</strong> (<code>renderfx</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Slow Wide Pulse</li>
-<li>Fast Wide Pulse</li>
-<li>Slow Strobe</li>
-<li>Fast Strobe</li>
-<li>Faster Strobe</li>
-<li>Slow Flicker</li>
-<li>Fast Flicker</li>
-<li>Slow Fade Away</li>
-<li>Fast Fade Away</li>
-<li>Slow Become Solid</li>
-<li>Fast Become Solid</li>
-<li>Constant Glow</li>
-<li>Distort</li>
-<li>Hologram (Distort + fade)</li>
-<li>Cull By Distance (TEST)</li>
-<li>Spotlight FX</li>
-<li>Fade Near</li>
+<li>Normal (<code>kRenderFxNone</code>)</li>
+<li>Slow Pulse (<code>kRenderFxPulseSlow</code>)</li>
+<li>Fast Pulse (<code>kRenderFxPulseFast</code>)</li>
+<li>Slow Wide Pulse (<code>kRenderFxPulseSlowWide</code>)</li>
+<li>Fast Wide Pulse (<code>kRenderFxPulseFastWide</code>)</li>
+<li>Slow Strobe (<code>kRenderFxStrobeSlow</code>)</li>
+<li>Fast Strobe (<code>kRenderFxStrobeFast</code>)</li>
+<li>Faster Strobe (<code>kRenderFxStrobeFaster</code>)</li>
+<li>Slow Flicker (<code>kRenderFxFlickerSlow</code>)</li>
+<li>Fast Flicker (<code>kRenderFxFlickerFast</code>)</li>
+<li>Slow Fade Away (<code>kRenderFxFadeSlow</code>)</li>
+<li>Fast Fade Away (<code>kRenderFxFadeFast</code>)</li>
+<li>Slow Become Solid (<code>kRenderFxSolidSlow</code>)</li>
+<li>Fast Become Solid (<code>kRenderFxSolidFast</code>)</li>
+<li>Constant Glow (<code>kRenderFxNoDissipation</code>)</li>
+<li>Distort (<code>15</code>)</li>
+<li>Hologram (Distort + fade) (<code>16</code>)</li>
+<li>Cull By Distance (TEST) (<code>23</code>)</li>
+<li>Spotlight FX (<code>24</code>)</li>
+<li>Fade Near (<code>26</code>)</li>
 </ul>
 </li>
 <li>
@@ -1975,54 +1975,54 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How this geometry influences baked lighting.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum CPU Level</strong> (<code>mincpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (low)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (low) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum CPU Level</strong> (<code>maxcpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum GPU Level</strong> (<code>mingpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (very low)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (very low) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum GPU Level</strong> (<code>maxgpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Disable X360</strong> (<code>disableX360</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -2049,34 +2049,34 @@
 <p><strong>Performance Mode</strong> (<code>PerformanceMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</p>
 <ul>
-<li>Normal</li>
-<li>No Gibs</li>
-<li>Full Gibs on All Platforms</li>
-<li>Reduced gibs</li>
+<li>Normal (<code>PM_NORMAL</code>)</li>
+<li>No Gibs (<code>PM_NO_GIBS</code>)</li>
+<li>Full Gibs on All Platforms (<code>PM_FULL_GIBS</code>)</li>
+<li>Reduced gibs (<code>PM_REDUCED_GIBS</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Break on Touch</li>
-<li>Break on Pressure</li>
-<li>Use Hitboxes for Renderbox</li>
-<li>Start with collision disabled</li>
-<li>Set to NAVIgnore</li>
-<li>Start Asleep</li>
-<li>Don&#x27;t take physics damage</li>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Motion Disabled</li>
-<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction)</li>
-<li>Not affected by rotor wash</li>
-<li>Generate output on +USE</li>
-<li>Prevent pickup</li>
-<li>Prevent motion enable on player bump</li>
-<li>Debris with trigger interaction</li>
-<li>Force non-solid to players</li>
-<li>Enable +use glow effect</li>
-<li>Physgun can ALWAYS pick up. No matter what.</li>
-<li>Important Grabbity Glove target.</li>
+<li>Break on Touch (<code>16</code>)</li>
+<li>Break on Pressure (<code>32</code>)</li>
+<li>Use Hitboxes for Renderbox (<code>64</code>)</li>
+<li>Start with collision disabled (<code>256</code>)</li>
+<li>Set to NAVIgnore (<code>512</code>)</li>
+<li>Start Asleep (<code>1</code>)</li>
+<li>Don&#x27;t take physics damage (<code>2</code>)</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Motion Disabled (<code>8</code>)</li>
+<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction) (<code>64</code>)</li>
+<li>Not affected by rotor wash (<code>128</code>)</li>
+<li>Generate output on +USE  (<code>256</code>)</li>
+<li>Prevent pickup (<code>512</code>)</li>
+<li>Prevent motion enable on player bump (<code>1024</code>)</li>
+<li>Debris with trigger interaction (<code>4096</code>)</li>
+<li>Force non-solid to players (<code>8192</code>)</li>
+<li>Enable +use glow effect (<code>32768</code>)</li>
+<li>Physgun can ALWAYS pick up. No matter what. (<code>1048576</code>)</li>
+<li>Important Grabbity Glove target. (<code>16777216</code>)</li>
 </ul>
 </li>
 <li>
@@ -2128,17 +2128,17 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Turn Off in Low-Violence</strong> (<code>disablelowviolence</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -2204,10 +2204,10 @@
 <li>
 <p><strong>Collisions</strong> (<code>solid</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
-<li>Use axis-aligned box</li>
-<li>Use oriented Box</li>
-<li>Use VPhysics</li>
+<li>Not Solid (<code>0</code>)</li>
+<li>Use axis-aligned box (<code>2</code>)</li>
+<li>Use oriented Box (<code>3</code>)</li>
+<li>Use VPhysics (<code>6</code>)</li>
 </ul>
 </li>
 <li>

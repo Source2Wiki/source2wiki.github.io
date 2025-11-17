@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/item_hlvr_combine_console_tank-hla"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/item_hlvr_combine_console_tank-hla"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/item_hlvr_combine_console_tank-hla" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/item_hlvr_combine_console_tank-hla" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,10 +29,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -50,46 +50,46 @@
 <li>
 <p><strong>Minimum CPU Level</strong> (<code>mincpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (low)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (low) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum CPU Level</strong> (<code>maxcpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum GPU Level</strong> (<code>mingpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (very low)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (very low) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum GPU Level</strong> (<code>maxgpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Disable X360</strong> (<code>disableX360</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -108,34 +108,34 @@
 <p><strong>Performance Mode</strong> (<code>PerformanceMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</p>
 <ul>
-<li>Normal</li>
-<li>No Gibs</li>
-<li>Full Gibs on All Platforms</li>
-<li>Reduced gibs</li>
+<li>Normal (<code>PM_NORMAL</code>)</li>
+<li>No Gibs (<code>PM_NO_GIBS</code>)</li>
+<li>Full Gibs on All Platforms (<code>PM_FULL_GIBS</code>)</li>
+<li>Reduced gibs (<code>PM_REDUCED_GIBS</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Break on Touch</li>
-<li>Break on Pressure</li>
-<li>Use Hitboxes for Renderbox</li>
-<li>Start with collision disabled</li>
-<li>Set to NAVIgnore</li>
-<li>Start Asleep</li>
-<li>Don&#x27;t take physics damage</li>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Motion Disabled</li>
-<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction)</li>
-<li>Not affected by rotor wash</li>
-<li>Generate output on +USE</li>
-<li>Prevent pickup</li>
-<li>Prevent motion enable on player bump</li>
-<li>Debris with trigger interaction</li>
-<li>Force non-solid to players</li>
-<li>Enable +use glow effect</li>
-<li>Physgun can ALWAYS pick up. No matter what.</li>
-<li>Important Grabbity Glove target.</li>
+<li>Break on Touch (<code>16</code>)</li>
+<li>Break on Pressure (<code>32</code>)</li>
+<li>Use Hitboxes for Renderbox (<code>64</code>)</li>
+<li>Start with collision disabled (<code>256</code>)</li>
+<li>Set to NAVIgnore (<code>512</code>)</li>
+<li>Start Asleep (<code>1</code>)</li>
+<li>Don&#x27;t take physics damage (<code>2</code>)</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Motion Disabled (<code>8</code>)</li>
+<li>Enable motion on Physcannon grab (This also applies to the HLVR hand interaction) (<code>64</code>)</li>
+<li>Not affected by rotor wash (<code>128</code>)</li>
+<li>Generate output on +USE  (<code>256</code>)</li>
+<li>Prevent pickup (<code>512</code>)</li>
+<li>Prevent motion enable on player bump (<code>1024</code>)</li>
+<li>Debris with trigger interaction (<code>4096</code>)</li>
+<li>Force non-solid to players (<code>8192</code>)</li>
+<li>Enable +use glow effect (<code>32768</code>)</li>
+<li>Physgun can ALWAYS pick up. No matter what. (<code>1048576</code>)</li>
+<li>Important Grabbity Glove target. (<code>16777216</code>)</li>
 </ul>
 </li>
 <li>
@@ -159,8 +159,8 @@
 <li>
 <p><strong>Create Client-Only Entity</strong> (<code>clientSideEntity</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -215,16 +215,16 @@ Set to 1.0 for materials as strong as flesh, smaller numbers indicate stronger m
 <li>
 <p><strong>Impact damage type</strong> (<code>Damagetype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Blunt</li>
-<li>Sharp</li>
+<li>Blunt (<code>0</code>)</li>
+<li>Sharp (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Damaging it Doesn&#x27;t Push It</strong> (<code>nodamageforces</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to determine whether or not damage should cause the brush to move.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">light_rect | Source2 Wiki</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/light_rect"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="light_rect | Source2 Wiki"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/light_rect"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/light_rect" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/light_rect" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"light_rect","item":"https://source2wiki.github.io/Entities/light_rect"}]}</script><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,11 +32,11 @@
 <p><strong>Units</strong> (<code>brightness_units</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Brightness Units</p>
 <ul>
-<li>Lumens</li>
-<li>Candelas</li>
-<li>Nits</li>
-<li>EV</li>
-<li>Legacy</li>
+<li>Lumens (<code>1</code>)</li>
+<li>Candelas (<code>4</code>)</li>
+<li>Nits (<code>2</code>)</li>
+<li>EV (<code>0</code>)</li>
+<li>Legacy (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -79,8 +79,8 @@
 <p><strong>Indirect Light Type</strong> (<code>bouncelight</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How indirect (bounce) light should be represented</p>
 <ul>
-<li>None</li>
-<li>Static</li>
+<li>None (<code>0</code>)</li>
+<li>Static (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -91,8 +91,8 @@
 <p><strong>Light Shape</strong> (<code>shape</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Shape of the light</p>
 <ul>
-<li>Rectangle</li>
-<li>Disk</li>
+<li>Rectangle (<code>0</code>)</li>
+<li>Disk (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -110,25 +110,25 @@
 <li>
 <p><strong>Shadow Map Resolution</strong> (<code>shadowmapsize</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>4096</li>
-<li>3584</li>
-<li>3072</li>
-<li>2560</li>
-<li>2048</li>
-<li>1536</li>
-<li>1024</li>
-<li>512</li>
-<li>Default</li>
+<li>4096 (<code>4096</code>)</li>
+<li>3584 (<code>3584</code>)</li>
+<li>3072 (<code>3072</code>)</li>
+<li>2560 (<code>2560</code>)</li>
+<li>2048 (<code>2048</code>)</li>
+<li>1536 (<code>1536</code>)</li>
+<li>1024 (<code>1024</code>)</li>
+<li>512 (<code>512</code>)</li>
+<li>Default (<code>-1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Shadow Priority</strong> (<code>shadowpriority</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Highest</li>
-<li>High</li>
-<li>Medium</li>
-<li>Low</li>
-<li>Default</li>
+<li>Highest (<code>100</code>)</li>
+<li>High (<code>10</code>)</li>
+<li>Medium (<code>5</code>)</li>
+<li>Low (<code>-5</code>)</li>
+<li>Default (<code>-1</code>)</li>
 </ul>
 </li>
 <li>
@@ -203,41 +203,41 @@
 <p><strong>Color Mode</strong> (<code>colormode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How to calculate the light&#x27;s color</p>
 <ul>
-<li>Color</li>
-<li>Color Temperature</li>
-<li>Color</li>
-<li>Color Temperature</li>
+<li>Color (<code>0</code>)</li>
+<li>Color Temperature (<code>1</code>)</li>
+<li>Color (<code>0</code>)</li>
+<li>Color Temperature (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Create Client-Only Entity</strong> (<code>clientSideEntity</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Cast Shadows</strong> (<code>castshadows</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Whether this light casts shadow</p>
 <ul>
-<li>No</li>
-<li>Baked &amp; Dynamic</li>
-<li>Baked Only</li>
-<li>No</li>
-<li>Static &amp; Dynamic</li>
-<li>Static Only</li>
+<li>No (<code>0</code>)</li>
+<li>Baked &amp; Dynamic (<code>1</code>)</li>
+<li>Baked Only (<code>2</code>)</li>
+<li>No (<code>0</code>)</li>
+<li>Static &amp; Dynamic (<code>1</code>)</li>
+<li>Static Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Direct Lighting Type</strong> (<code>directlight</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How direct lighting should be represented: Static=Fully baked into lightmap (cheapest), Stationary=Dynamic direct light with baked shadows, Dynamic=Fully dynamic (Most expensive)</p>
 <ul>
-<li>None</li>
-<li>Static</li>
-<li>None</li>
-<li>Static</li>
-<li>Stationary</li>
-<li>Dynamic</li>
+<li>None (<code>0</code>)</li>
+<li>Static (<code>1</code>)</li>
+<li>None (<code>0</code>)</li>
+<li>Static (<code>1</code>)</li>
+<li>Stationary (<code>3</code>)</li>
+<li>Dynamic (<code>2</code>)</li>
 </ul>
 </li>
 </ul></div></div></details>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/env_explosion-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/env_explosion-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_explosion-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_explosion-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -31,16 +31,16 @@
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
@@ -86,34 +86,34 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>No Damage</li>
-<li>Repeatable</li>
-<li>No Decal</li>
-<li>No Sound</li>
-<li>Damage above water surface only</li>
-<li>Generic damage</li>
-<li>Use Orientation for Custom Explosion</li>
+<li>No Damage (<code>1</code>)</li>
+<li>Repeatable (<code>2</code>)</li>
+<li>No Decal (<code>16</code>)</li>
+<li>No Sound (<code>64</code>)</li>
+<li>Damage above water surface only (<code>8192</code>)</li>
+<li>Generic damage (<code>16384</code>)</li>
+<li>Use Orientation for Custom Explosion (<code>32768</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Explosion Type</strong> (<code>explosion_type</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Default</li>
-<li>Grenade</li>
-<li>Molotov</li>
-<li>Fireworks</li>
-<li>Gasoline Can</li>
-<li>Pressurized Gas Cylinder</li>
-<li>Explosive Barrel</li>
-<li>Electrical</li>
-<li>EMP</li>
-<li>Shrapnel</li>
-<li>Smoke Grenade</li>
-<li>Flashbang</li>
-<li>Tripmine</li>
-<li>Ice</li>
-<li>None</li>
-<li>Custom</li>
+<li>Default (``)</li>
+<li>Grenade (<code>grenade</code>)</li>
+<li>Molotov (<code>molotov</code>)</li>
+<li>Fireworks (<code>fireworks</code>)</li>
+<li>Gasoline Can (<code>gascan</code>)</li>
+<li>Pressurized Gas Cylinder (<code>gascylinder</code>)</li>
+<li>Explosive Barrel (<code>explosivebarrel</code>)</li>
+<li>Electrical (<code>electrical</code>)</li>
+<li>EMP (<code>emp</code>)</li>
+<li>Shrapnel (<code>shrapnel</code>)</li>
+<li>Smoke Grenade (<code>smoke</code>)</li>
+<li>Flashbang (<code>flashbang</code>)</li>
+<li>Tripmine (<code>tripmine</code>)</li>
+<li>Ice (<code>ice</code>)</li>
+<li>None (<code>none</code>)</li>
+<li>Custom (<code>custom</code>)</li>
 </ul>
 </li>
 <li>

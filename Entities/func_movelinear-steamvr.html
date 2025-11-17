@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/func_movelinear-steamvr"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/func_movelinear-steamvr"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/func_movelinear-steamvr" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/func_movelinear-steamvr" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,87 +29,87 @@
 <li>
 <p><strong>Minimum CPU Level</strong> (<code>mincpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (low)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (low) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum CPU Level</strong> (<code>maxcpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum GPU Level</strong> (<code>mingpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (very low)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (very low) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum GPU Level</strong> (<code>maxgpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Disable X360</strong> (<code>disableX360</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render Mode</strong> (<code>rendermode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to set a non-standard rendering mode on this entity. See also &#x27;FX Amount&#x27; and &#x27;FX Color&#x27;.</p>
 <ul>
-<li>Normal</li>
-<li>Color</li>
-<li>Texture</li>
-<li>Glow</li>
-<li>Solid</li>
-<li>Additive</li>
-<li>Additive Fractional Frame</li>
-<li>World Space Glow</li>
-<li>Dont Render</li>
-<li>Dev Visualizer</li>
+<li>Normal (<code>kRenderNormal</code>)</li>
+<li>Color (<code>kRenderTransColor</code>)</li>
+<li>Texture (<code>kRenderTransTexture</code>)</li>
+<li>Glow (<code>kRenderGlow</code>)</li>
+<li>Solid (<code>kRenderTransAlpha</code>)</li>
+<li>Additive (<code>kRenderTransAdd</code>)</li>
+<li>Additive Fractional Frame (<code>kRenderTransAddFrameBlend</code>)</li>
+<li>World Space Glow (<code>kRenderWorldGlow</code>)</li>
+<li>Dont Render (<code>kRenderNone</code>)</li>
+<li>Dev Visualizer (<code>kRenderDevVisualizer</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render FX</strong> (<code>renderfx</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Slow Wide Pulse</li>
-<li>Fast Wide Pulse</li>
-<li>Slow Strobe</li>
-<li>Fast Strobe</li>
-<li>Faster Strobe</li>
-<li>Slow Flicker</li>
-<li>Fast Flicker</li>
-<li>Slow Fade Away</li>
-<li>Fast Fade Away</li>
-<li>Slow Become Solid</li>
-<li>Fast Become Solid</li>
-<li>Constant Glow</li>
-<li>Distort</li>
-<li>Hologram (Distort + fade)</li>
-<li>Cull By Distance (TEST)</li>
-<li>Spotlight FX</li>
-<li>Fade Near</li>
+<li>Normal (<code>kRenderFxNone</code>)</li>
+<li>Slow Pulse (<code>kRenderFxPulseSlow</code>)</li>
+<li>Fast Pulse (<code>kRenderFxPulseFast</code>)</li>
+<li>Slow Wide Pulse (<code>kRenderFxPulseSlowWide</code>)</li>
+<li>Fast Wide Pulse (<code>kRenderFxPulseFastWide</code>)</li>
+<li>Slow Strobe (<code>kRenderFxStrobeSlow</code>)</li>
+<li>Fast Strobe (<code>kRenderFxStrobeFast</code>)</li>
+<li>Faster Strobe (<code>kRenderFxStrobeFaster</code>)</li>
+<li>Slow Flicker (<code>kRenderFxFlickerSlow</code>)</li>
+<li>Fast Flicker (<code>kRenderFxFlickerFast</code>)</li>
+<li>Slow Fade Away (<code>kRenderFxFadeSlow</code>)</li>
+<li>Fast Fade Away (<code>kRenderFxFadeFast</code>)</li>
+<li>Slow Become Solid (<code>kRenderFxSolidSlow</code>)</li>
+<li>Fast Become Solid (<code>kRenderFxSolidFast</code>)</li>
+<li>Constant Glow (<code>kRenderFxNoDissipation</code>)</li>
+<li>Distort (<code>15</code>)</li>
+<li>Hologram (Distort + fade) (<code>16</code>)</li>
+<li>Cull By Distance (TEST) (<code>23</code>)</li>
+<li>Spotlight FX (<code>24</code>)</li>
+<li>Fade Near (<code>26</code>)</li>
 </ul>
 </li>
 <li>
@@ -147,9 +147,9 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How this geometry influences baked lighting.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -195,7 +195,7 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Not Solid</li>
+<li>Not Solid (<code>8</code>)</li>
 </ul>
 </li>
 <li>

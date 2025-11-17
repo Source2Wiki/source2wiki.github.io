@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">worldspawn | Source2 Wiki</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/worldspawn"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="worldspawn | Source2 Wiki"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/worldspawn"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/worldspawn" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/worldspawn" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"worldspawn","item":"https://source2wiki.github.io/Entities/worldspawn"}]}</script><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -44,18 +44,18 @@
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
-<li>Partitioned solve (large map volume)</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
+<li>Partitioned solve (large map volume) (<code>11</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>New Level Unit</strong> (<code>newunit</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.</p>
 <ul>
-<li>No, keep current</li>
-<li>Yes, clear previous levels</li>
+<li>No, keep current (<code>0</code>)</li>
+<li>Yes, clear previous levels (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -69,13 +69,13 @@
 <li>
 <p><strong>Maximum Lightmap Resolution</strong> (<code>max_lightmap_resolution</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No Maximum</li>
-<li>512</li>
-<li>1024</li>
-<li>2048</li>
-<li>4096</li>
-<li>8192</li>
-<li>16384</li>
+<li>No Maximum (<code>0</code>)</li>
+<li>512 (<code>512</code>)</li>
+<li>1024 (<code>1024</code>)</li>
+<li>2048 (<code>2048</code>)</li>
+<li>4096 (<code>4096</code>)</li>
+<li>8192 (<code>8192</code>)</li>
+<li>16384 (<code>16384</code>)</li>
 </ul>
 </li>
 <li>
@@ -86,18 +86,18 @@
 <p><strong>Rebake Option</strong> (<code>steamaudio_reverb_rebake_option</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Cleanup</b>: Reverb bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br><b>Manual</b>: Reverb needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br><b>Auto</b>: Reverb is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.</p>
 <ul>
-<li>Cleanup</li>
-<li>Manual</li>
-<li>Auto</li>
+<li>Cleanup (<code>0</code>)</li>
+<li>Manual (<code>1</code>)</li>
+<li>Auto (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Generation Type</strong> (<code>steamaudio_reverb_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
 <ul>
-<li>Automatic, Everywhere</li>
-<li>Automatic, Use Probe Generation Volumes</li>
-<li>Manual</li>
+<li>Automatic, Everywhere (<code>0</code>)</li>
+<li>Automatic, Use Probe Generation Volumes (<code>1</code>)</li>
+<li>Manual (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -148,18 +148,18 @@
 <p><strong>Rebake Option</strong> (<code>steamaudio_pathing_rebake_option</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Cleanup</b>: Pathing bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br><b>Manual</b>: Pathing needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br><b>Auto</b>: Pathing is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.</p>
 <ul>
-<li>Cleanup</li>
-<li>Manual</li>
-<li>Auto</li>
+<li>Cleanup (<code>0</code>)</li>
+<li>Manual (<code>1</code>)</li>
+<li>Auto (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Generation Type</strong> (<code>steamaudio_pathing_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
 <ul>
-<li>Automatic, Everywhere</li>
-<li>Automatic, Use Probe Generation Volumes</li>
-<li>Manual</li>
+<li>Automatic, Everywhere (<code>0</code>)</li>
+<li>Automatic, Use Probe Generation Volumes (<code>1</code>)</li>
+<li>Manual (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -198,18 +198,18 @@
 <p><strong>Rebake Option</strong> (<code>steamaudio_customdata_rebake_option</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Cleanup</b>: Custom bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br><b>Manual</b>: Custom data needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br><b>Auto</b>: Custom data is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.</p>
 <ul>
-<li>Cleanup</li>
-<li>Manual</li>
-<li>Auto</li>
+<li>Cleanup (<code>0</code>)</li>
+<li>Manual (<code>1</code>)</li>
+<li>Auto (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Generation Type</strong> (<code>steamaudio_customdata_generation_type</code>) &lt;<code>Choices</code>&gt;<br>
 <b>Automatic, Everywhere</b>: When baking, probes will be generated to cover the entire map.<br><b>Automatic, Use Probe Generation Volumes</b>: When baking, probes will only be generated within Probe Generation Volumes that have been explicitly placed in the map.<br><b>Manual</b>: When baking, probes will not be generated. Only probes that have been manually placed in the map will be used.</p>
 <ul>
-<li>Automatic, Everywhere</li>
-<li>Automatic, Use Probe Generation Volumes</li>
-<li>Manual</li>
+<li>Automatic, Everywhere (<code>0</code>)</li>
+<li>Automatic, Use Probe Generation Volumes (<code>1</code>)</li>
+<li>Manual (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -275,17 +275,17 @@
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>New Level Unit</strong> (<code>newunit</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.</p>
 <ul>
-<li>No, keep current</li>
-<li>Yes, clear previous levels</li>
+<li>No, keep current (<code>0</code>)</li>
+<li>Yes, clear previous levels (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -299,17 +299,17 @@
 <li>
 <p><strong>VR Chaperone</strong> (<code>vrchaperone</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Chaperone</li>
-<li>Chaperone + Safe Zone</li>
-<li>No Chaperone</li>
+<li>Chaperone (<code>0</code>)</li>
+<li>Chaperone + Safe Zone (<code>1</code>)</li>
+<li>No Chaperone (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>VR Movement</strong> (<code>vrmovement</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>None</li>
-<li>Teleport</li>
-<li>Teleport (w/non-up floor)</li>
+<li>None (<code>0</code>)</li>
+<li>Teleport (<code>1</code>)</li>
+<li>Teleport (w/non-up floor) (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -323,13 +323,13 @@
 <li>
 <p><strong>Maximum Lightmap Resolution</strong> (<code>max_lightmap_resolution</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No Maximum</li>
-<li>512</li>
-<li>1024</li>
-<li>2048</li>
-<li>4096</li>
-<li>8192</li>
-<li>16384</li>
+<li>No Maximum (<code>0</code>)</li>
+<li>512 (<code>512</code>)</li>
+<li>1024 (<code>1024</code>)</li>
+<li>2048 (<code>2048</code>)</li>
+<li>4096 (<code>4096</code>)</li>
+<li>8192 (<code>8192</code>)</li>
+<li>16384 (<code>16384</code>)</li>
 </ul>
 </li>
 <li>
@@ -355,18 +355,18 @@
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
-<li>Partitioned solve (large map volume)</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
+<li>Partitioned solve (large map volume) (<code>11</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>New Level Unit</strong> (<code>newunit</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.</p>
 <ul>
-<li>No, keep current</li>
-<li>Yes, clear previous levels</li>
+<li>No, keep current (<code>0</code>)</li>
+<li>Yes, clear previous levels (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -380,9 +380,9 @@
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
 </ul>
 </li>
 <li>
@@ -405,17 +405,17 @@
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>New Level Unit</strong> (<code>newunit</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.</p>
 <ul>
-<li>No, keep current</li>
-<li>Yes, clear previous levels</li>
+<li>No, keep current (<code>0</code>)</li>
+<li>Yes, clear previous levels (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -429,25 +429,25 @@
 <li>
 <p><strong>VR Chaperone</strong> (<code>vrchaperone</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Chaperone</li>
-<li>Chaperone + Safe Zone</li>
-<li>No Chaperone</li>
+<li>Chaperone (<code>0</code>)</li>
+<li>Chaperone + Safe Zone (<code>1</code>)</li>
+<li>No Chaperone (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>VR Movement</strong> (<code>vrmovement</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>None</li>
-<li>Teleport</li>
-<li>Teleport (w/non-up floor)</li>
+<li>None (<code>0</code>)</li>
+<li>Teleport (<code>1</code>)</li>
+<li>Teleport (w/non-up floor) (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Precomputed Visibility</strong> (<code>pvstype</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Test map (open space, no skybox)</li>
-<li>Full visibility solve</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Test map (open space, no skybox) (<code>1</code>)</li>
+<li>Full visibility solve (<code>10</code>)</li>
 </ul>
 </li>
 <li>

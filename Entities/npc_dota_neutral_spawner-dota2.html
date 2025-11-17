@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/npc_dota_neutral_spawner-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/npc_dota_neutral_spawner-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_dota_neutral_spawner-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_dota_neutral_spawner-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -37,41 +37,41 @@
 <li>
 <p><strong>Camp Type</strong> (<code>NeutralType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Easy</li>
-<li>Moderate</li>
-<li>Hard</li>
-<li>Ancient</li>
+<li>Easy (<code>0</code>)</li>
+<li>Moderate (<code>1</code>)</li>
+<li>Hard (<code>2</code>)</li>
+<li>Ancient (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Pull Type</strong> (<code>PullType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Fast</li>
-<li>Slow</li>
-<li>Sorta Fast</li>
-<li>Small Lane Camp</li>
-<li>Just Enough</li>
+<li>Normal (<code>0</code>)</li>
+<li>Fast (<code>1</code>)</li>
+<li>Slow (<code>2</code>)</li>
+<li>Sorta Fast (<code>3</code>)</li>
+<li>Small Lane Camp (<code>4</code>)</li>
+<li>Just Enough (<code>5</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Aggro Type</strong> (<code>AggroType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Never</li>
-<li>Always</li>
+<li>Never (<code>0</code>)</li>
+<li>Always (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Force Spawn Type</strong> (<code>ForcedSubType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Random (Normal Gamerules)</li>
-<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A)</li>
-<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A)</li>
-<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A)</li>
-<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A)</li>
-<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A)</li>
-<li>Harpies (E), Warpine (H)</li>
-<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A)</li>
+<li>Random (Normal Gamerules) (<code>0</code>)</li>
+<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A) (<code>1</code>)</li>
+<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A) (<code>2</code>)</li>
+<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A) (<code>3</code>)</li>
+<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A) (<code>4</code>)</li>
+<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A) (<code>5</code>)</li>
+<li>Harpies (E), Warpine (H) (<code>6</code>)</li>
+<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A) (<code>7</code>)</li>
 </ul>
 </li>
 <li>
@@ -81,25 +81,25 @@
 <li>
 <p><strong>Min Spawn Type</strong> (<code>MinSpawnType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A) - (Normal Gamerules)</li>
-<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A)</li>
-<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A)</li>
-<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A)</li>
-<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A)</li>
-<li>Harpies (E), Warpine (H)</li>
-<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A)</li>
+<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A) - (Normal Gamerules) (<code>1</code>)</li>
+<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A) (<code>2</code>)</li>
+<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A) (<code>3</code>)</li>
+<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A) (<code>4</code>)</li>
+<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A) (<code>5</code>)</li>
+<li>Harpies (E), Warpine (H) (<code>6</code>)</li>
+<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A) (<code>7</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Max Spawn Type</strong> (<code>MaxSpawnType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A)</li>
-<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A)</li>
-<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A)</li>
-<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A)</li>
-<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A)</li>
-<li>Harpies (E), Warpine (H)</li>
-<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A)</li>
+<li>Kobolds (E), Ogres (M), Centaurs (H), Drakes (A) (<code>1</code>)</li>
+<li>Gnolls (E), Wolves (M), Troll Warlord (H), Rock Golems (A) (<code>2</code>)</li>
+<li>Troll Priest (E), Mud Golems (M), Ursa (H), Lizards (A) (<code>3</code>)</li>
+<li>Trolls &amp; Kobold (E), Satyrs (M), Satyrs (H), Frostbitten Golems (A) (<code>4</code>)</li>
+<li>Ghosts (E), Centaurs (M), Wildkin (H), Prowlers (A) (<code>5</code>)</li>
+<li>Harpies (E), Warpine (H) (<code>6</code>)</li>
+<li>Tadpoles (E), Froglets (M), Grown Frog (H), Ancient Frogs (A) (<code>7</code>)</li>
 </ul>
 </li>
 <li>

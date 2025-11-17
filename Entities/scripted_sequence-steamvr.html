@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/scripted_sequence-steamvr"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/scripted_sequence-steamvr"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/scripted_sequence-steamvr" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/scripted_sequence-steamvr" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -78,16 +78,16 @@
 <p><strong>Script Conflict Response</strong> (<code>conflict_response</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->What to do if this scripted sequence begins and the actor is already executing a scripted sequence.</p>
 <ul>
-<li>Enqueue</li>
-<li>Interrupt</li>
+<li>Enqueue (<code>0</code>)</li>
+<li>Interrupt (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Ground IK Preference</strong> (<code>m_nGroundIKPreference</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->If this NPC has ground IK; whether we disable it for the playthrough of the sequence or not.</p>
 <ul>
-<li>No change</li>
-<li>Disable for this sequence</li>
+<li>No change (<code>0</code>)</li>
+<li>Disable for this sequence (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -100,12 +100,12 @@
 <li>
 <p><strong>Move to Position</strong> (<code>m_fMoveTo</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Walk</li>
-<li>Run</li>
-<li>Custom movement</li>
-<li>Instantaneous</li>
-<li>No - Turn to Face</li>
+<li>No (<code>0</code>)</li>
+<li>Walk (<code>1</code>)</li>
+<li>Run (<code>2</code>)</li>
+<li>Custom movement (<code>3</code>)</li>
+<li>Instantaneous (<code>4</code>)</li>
+<li>No - Turn to Face (<code>5</code>)</li>
 </ul>
 </li>
 <li>
@@ -127,49 +127,49 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Repeatable</li>
-<li>Leave Corpse (if not, fade)</li>
-<li>Start on Spawn</li>
-<li>No Interruptions</li>
-<li>Override AI</li>
-<li>Don&#x27;t Teleport NPC On End</li>
-<li>Loop in Post Idle</li>
-<li>Priority Script</li>
-<li>Hide Debug Complaints</li>
-<li>Allow other NPC actors to continue after this NPC actor&#x27;s death</li>
+<li>Repeatable (<code>4</code>)</li>
+<li>Leave Corpse (if not, fade) (<code>8</code>)</li>
+<li>Start on Spawn (<code>16</code>)</li>
+<li>No Interruptions (<code>32</code>)</li>
+<li>Override AI (<code>64</code>)</li>
+<li>Don&#x27;t Teleport NPC On End (<code>128</code>)</li>
+<li>Loop in Post Idle (<code>256</code>)</li>
+<li>Priority Script (<code>512</code>)</li>
+<li>Hide Debug Complaints (<code>2048</code>)</li>
+<li>Allow other NPC actors to continue after this NPC actor&#x27;s death (<code>4096</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>On player death</strong> (<code>onplayerdeath</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->What this entity should do if the player dies.</p>
 <ul>
-<li>Do Nothing</li>
-<li>Cancel Script and return to AI</li>
+<li>Do Nothing (<code>0</code>)</li>
+<li>Cancel Script and return to AI (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>On NPC actor death</strong> (<code>onnpcdeath</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->What the NPC performing this script should do if it dies.</p>
 <ul>
-<li>LEGACY - Use old settings</li>
-<li>Ragdoll immediately</li>
-<li>Perform a death animation</li>
+<li>LEGACY - Use old settings (<code>0</code>)</li>
+<li>Ragdoll immediately (<code>1</code>)</li>
+<li>Perform a death animation (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Prevent Yaw Update on Finish</strong> (<code>prevent_update_yaw_on_finish</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->By default, when finishing the sequence, the NPC has its ideal yaw updated to maintain the current forward facing. This allows you to prevent that if you want to return to the facing prior to starting the sequence.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Ensure on Nav Mesh on Finish</strong> (<code>ensure_on_navmesh_on_finish</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->When finishing the sequence, if the NPC uses the navmesh, ensure the NPC is on a valid location on the navmesh.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 </ul></div></div></details>

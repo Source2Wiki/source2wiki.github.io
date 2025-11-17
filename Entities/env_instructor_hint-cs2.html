@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/env_instructor_hint-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/env_instructor_hint-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_instructor_hint-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/env_instructor_hint-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -47,16 +47,16 @@
 <p><strong>Positioning</strong> (<code>hint_static</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Either show at the position of the Target Entity. Or show the hint directly on the hud at a fixed position.</p>
 <ul>
-<li>Follow the Target Entity</li>
-<li>Show on the hud</li>
+<li>Follow the Target Entity (<code>0</code>)</li>
+<li>Show on the hud (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Allow invisible target</strong> (<code>hint_allow_nodraw_target</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Do we allow the hint to follow entites with nodraw set?</p>
 <ul>
-<li>End immediately on nodraw</li>
-<li>Yes</li>
+<li>End immediately on nodraw (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -75,71 +75,71 @@
 <p><strong>Force caption</strong> (<code>hint_forcecaption</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Do we show the caption text even if the hint is occluded by a wall?</p>
 <ul>
-<li>No</li>
-<li>Show when occluded</li>
+<li>No (<code>0</code>)</li>
+<li>Show when occluded (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Onscreen Icon</strong> (<code>hint_icon_onscreen</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->The icon to use when the hint is within the player&#x27;s view.</p>
 <ul>
-<li>icon_bulb</li>
-<li>icon_caution</li>
-<li>icon_tip</li>
-<li>icon_info</li>
-<li>icon_shield</li>
-<li>icon_alert</li>
-<li>icon_alert_red</li>
-<li>icon_tip</li>
-<li>icon_skull</li>
-<li>icon_no</li>
-<li>icon_run</li>
-<li>icon_interact</li>
-<li>icon_button</li>
-<li>icon_door</li>
-<li>icon_arrow_plain</li>
-<li>icon_arrow_plain_white_dn</li>
-<li>icon_arrow_plain_white_up</li>
-<li>icon_arrow_up</li>
-<li>icon_arrow_right</li>
-<li>icon_fire</li>
-<li>icon_present</li>
-<li>show key bindings</li>
+<li>icon_bulb (<code>icon_bulb</code>)</li>
+<li>icon_caution (<code>icon_caution</code>)</li>
+<li>icon_tip (<code>icon_tip</code>)</li>
+<li>icon_info (<code>icon_info</code>)</li>
+<li>icon_shield (<code>icon_shield</code>)</li>
+<li>icon_alert (<code>icon_alert</code>)</li>
+<li>icon_alert_red (<code>icon_alert_red</code>)</li>
+<li>icon_tip (<code>icon_tip</code>)</li>
+<li>icon_skull (<code>icon_skull</code>)</li>
+<li>icon_no (<code>icon_no</code>)</li>
+<li>icon_run (<code>icon_run</code>)</li>
+<li>icon_interact (<code>icon_interact</code>)</li>
+<li>icon_button (<code>icon_button</code>)</li>
+<li>icon_door (<code>icon_door</code>)</li>
+<li>icon_arrow_plain (<code>icon_arrow_plain</code>)</li>
+<li>icon_arrow_plain_white_dn (<code>icon_arrow_plain_white_dn</code>)</li>
+<li>icon_arrow_plain_white_up (<code>icon_arrow_plain_white_up</code>)</li>
+<li>icon_arrow_up (<code>icon_arrow_up</code>)</li>
+<li>icon_arrow_right (<code>icon_arrow_right</code>)</li>
+<li>icon_fire (<code>icon_fire</code>)</li>
+<li>icon_present (<code>icon_present</code>)</li>
+<li>show key bindings (<code>use_binding</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Offscreen Icon</strong> (<code>hint_icon_offscreen</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->The icon to use when the hint is outside the player&#x27;s view.</p>
 <ul>
-<li>icon_bulb</li>
-<li>icon_caution</li>
-<li>icon_tip</li>
-<li>icon_info</li>
-<li>icon_shield</li>
-<li>icon_alert</li>
-<li>icon_alert_red</li>
-<li>icon_tip</li>
-<li>icon_skull</li>
-<li>icon_no</li>
-<li>icon_run</li>
-<li>icon_interact</li>
-<li>icon_button</li>
-<li>icon_door</li>
-<li>icon_arrow_plain</li>
-<li>icon_arrow_plain_white_dn</li>
-<li>icon_arrow_plain_white_up</li>
-<li>icon_arrow_up</li>
-<li>icon_arrow_right</li>
-<li>icon_fire</li>
-<li>icon_present</li>
+<li>icon_bulb (<code>icon_bulb</code>)</li>
+<li>icon_caution (<code>icon_caution</code>)</li>
+<li>icon_tip (<code>icon_tip</code>)</li>
+<li>icon_info (<code>icon_info</code>)</li>
+<li>icon_shield (<code>icon_shield</code>)</li>
+<li>icon_alert (<code>icon_alert</code>)</li>
+<li>icon_alert_red (<code>icon_alert_red</code>)</li>
+<li>icon_tip (<code>icon_tip</code>)</li>
+<li>icon_skull (<code>icon_skull</code>)</li>
+<li>icon_no (<code>icon_no</code>)</li>
+<li>icon_run (<code>icon_run</code>)</li>
+<li>icon_interact (<code>icon_interact</code>)</li>
+<li>icon_button (<code>icon_button</code>)</li>
+<li>icon_door (<code>icon_door</code>)</li>
+<li>icon_arrow_plain (<code>icon_arrow_plain</code>)</li>
+<li>icon_arrow_plain_white_dn (<code>icon_arrow_plain_white_dn</code>)</li>
+<li>icon_arrow_plain_white_up (<code>icon_arrow_plain_white_up</code>)</li>
+<li>icon_arrow_up (<code>icon_arrow_up</code>)</li>
+<li>icon_arrow_right (<code>icon_arrow_right</code>)</li>
+<li>icon_fire (<code>icon_fire</code>)</li>
+<li>icon_present (<code>icon_present</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Show offscreen</strong> (<code>hint_nooffscreen</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->When the hint is offscreen, do we show an icon and arrow?</p>
 <ul>
-<li>Show</li>
-<li>Don&#x27;t show</li>
+<li>Show (<code>0</code>)</li>
+<li>Don&#x27;t show (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -154,29 +154,29 @@
 <p><strong>Size Pulsing</strong> (<code>hint_pulseoption</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->The icon size can pulsate</p>
 <ul>
-<li>No Pulse</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Urgent Pulse</li>
+<li>No Pulse (<code>0</code>)</li>
+<li>Slow Pulse (<code>1</code>)</li>
+<li>Fast Pulse (<code>2</code>)</li>
+<li>Urgent Pulse (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Alpha Pulsing</strong> (<code>hint_alphaoption</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->The icon alpha can pulsate</p>
 <ul>
-<li>No Pulse</li>
-<li>Slow Pulse</li>
-<li>Fast Pulse</li>
-<li>Urgent Pulse</li>
+<li>No Pulse (<code>0</code>)</li>
+<li>Slow Pulse (<code>1</code>)</li>
+<li>Fast Pulse (<code>2</code>)</li>
+<li>Urgent Pulse (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Shaking</strong> (<code>hint_shakeoption</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->The icon can shake</p>
 <ul>
-<li>No Shaking</li>
-<li>Narrow Shake</li>
-<li>Wide Shake</li>
+<li>No Shaking (<code>0</code>)</li>
+<li>Narrow Shake (<code>1</code>)</li>
+<li>Wide Shake (<code>2</code>)</li>
 </ul>
 </li>
 <li>

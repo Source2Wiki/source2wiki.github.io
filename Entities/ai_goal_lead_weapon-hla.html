@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/ai_goal_lead_weapon-hla"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/ai_goal_lead_weapon-hla"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/ai_goal_lead_weapon-hla" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/ai_goal_lead_weapon-hla" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -57,43 +57,43 @@
 <li>
 <p><strong>Retrieve player?</strong> (<code>Retrieve</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No, just idle and wait</li>
-<li>Yes, move to retrieve</li>
+<li>No, just idle and wait (<code>0</code>)</li>
+<li>Yes, move to retrieve (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Before Coming Back, Wait for speech?</strong> (<code>ComingBackWaitForSpeak</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No, come back while speaking</li>
-<li>Yes, wait for speech to finish</li>
+<li>No, come back while speaking (<code>0</code>)</li>
+<li>Yes, wait for speech to finish (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>On Retrieve, Wait for speech?</strong> (<code>RetrieveWaitForSpeak</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No, start leading while speaking</li>
-<li>Yes, wait for speech to finish</li>
+<li>No, start leading while speaking (<code>0</code>)</li>
+<li>Yes, wait for speech to finish (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Speak start greeting?</strong> (<code>DontSpeakStart</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Yes, speak the start greeting</li>
-<li>No, don&#x27;t speak the greeting</li>
+<li>Yes, speak the start greeting (<code>0</code>)</li>
+<li>No, don&#x27;t speak the greeting (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Lead during combat?</strong> (<code>LeadDuringCombat</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No. Stop to fight, resume leading when safe.</li>
-<li>Yes, lead while fighting.</li>
+<li>No. Stop to fight, resume leading when safe. (<code>0</code>)</li>
+<li>Yes, lead while fighting. (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Gag Leader?</strong> (<code>GagLeader</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No. Speak lead concepts normally, respecting other lead speech settings.</li>
-<li>Yes, don&#x27;t speak any lead concepts at all, overriding all other lead speech settings.</li>
+<li>No. Speak lead concepts normally, respecting other lead speech settings. (<code>0</code>)</li>
+<li>Yes, don&#x27;t speak any lead concepts at all, overriding all other lead speech settings. (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -130,17 +130,17 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>No def success</li>
-<li>No def failure</li>
-<li>Use goal facing</li>
+<li>No def success (<code>1</code>)</li>
+<li>No def failure (<code>2</code>)</li>
+<li>Use goal facing (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Weapon</strong> (<code>WeaponName</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Bugbait</li>
-<li>SMG1</li>
-<li>AR2</li>
+<li>Bugbait (<code>weapon_bugbait</code>)</li>
+<li>SMG1 (<code>weapon_smg1</code>)</li>
+<li>AR2 (<code>weapon_ar2</code>)</li>
 </ul>
 </li>
 <li>
@@ -150,8 +150,8 @@
 <p><strong>Search Type</strong> (<code>SearchType</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How to search for the entities using the targetname.</p>
 <ul>
-<li>Entity Name</li>
-<li>Classname</li>
+<li>Entity Name (<code>0</code>)</li>
+<li>Classname (<code>1</code>)</li>
 </ul>
 </li>
 </ul></div></div></details>

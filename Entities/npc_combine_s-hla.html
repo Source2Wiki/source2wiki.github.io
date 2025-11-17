@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/npc_combine_s-hla"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/npc_combine_s-hla"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_combine_s-hla" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_combine_s-hla" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -40,19 +40,19 @@
 <p><strong>Don&#x27;t Use Speech Semaphore</strong> (<code>DontUseSpeechSemaphore</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Friendly NPCs are not allowed to speak if another friendly NPC is speaking. In some cases we don&#x27;t want speaking NPCs to prevent other NPCs from speaking (for instance, if there is a friendly NPC speaking for a long time on a monitor). To make this NPC not prevent other NPCs from talking, make it not grab the semaphore when it speaks.</p>
 <ul>
-<li>No (Use speech semaphore)</li>
-<li>Yes (Don&#x27;t use speech semaphore)</li>
+<li>No (Use speech semaphore) (<code>0</code>)</li>
+<li>Yes (Don&#x27;t use speech semaphore) (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Weapons</strong> (<code>additionalequipment</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Default</li>
-<li>AR2</li>
-<li>Shotgun</li>
-<li>SMG1</li>
-<li>Stun Stick</li>
-<li>Nothing</li>
+<li>Default (<code>default</code>)</li>
+<li>AR2 (<code>weapon_ar2</code>)</li>
+<li>Shotgun (<code>weapon_shotgun</code>)</li>
+<li>SMG1 (<code>weapon_smg1</code>)</li>
+<li>Stun Stick (<code>weapon_stunstick</code>)</li>
+<li>Nothing (<code>0</code>)</li>
 </ul>
 </li>
 <li>
@@ -62,16 +62,16 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Start LookOff</li>
-<li>Don&#x27;t drop grenades</li>
-<li>Don&#x27;t drop ar2 alt fire (elite only)</li>
+<li>Start LookOff (<code>65536</code>)</li>
+<li>Don&#x27;t drop grenades (<code>131072</code>)</li>
+<li>Don&#x27;t drop ar2 alt fire (elite only)  (<code>262144</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Teleportation</strong> (<code>TeleportGrenades</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Disabled</li>
-<li>Teleport Grenades</li>
+<li>Disabled (<code>0</code>)</li>
+<li>Teleport Grenades (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -81,41 +81,41 @@
 <p><strong>Model</strong> (<code>model</code>) &lt;<code>ResourceChoices</code>&gt;<br>
 <!-- -->Grunt</p>
 <ul>
-<li>Grunt</li>
-<li>Officer</li>
-<li>Charger</li>
-<li>Suppressor</li>
+<li>Grunt (<code>models/characters/combine_grunt/combine_grunt.vmdl</code>)</li>
+<li>Officer (<code>models/characters/combine_soldier_captain/combine_captain.vmdl</code>)</li>
+<li>Charger (<code>models/characters/combine_soldier_heavy/combine_soldier_heavy.vmdl</code>)</li>
+<li>Suppressor (<code>models/characters/combine_suppressor/combine_suppressor.vmdl</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Tactical Variant</strong> (<code>tacticalvariant</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal Tactics</li>
-<li>OBSOLETE - Pressure the enemy (Keep advancing)</li>
-<li>OBSOLETE - Pressure until within 30ft, then normal</li>
-<li>Defensive Stance towards Last Seen Position</li>
+<li>Normal Tactics (<code>0</code>)</li>
+<li>OBSOLETE - Pressure the enemy (Keep advancing) (<code>1</code>)</li>
+<li>OBSOLETE - Pressure until within 30ft, then normal (<code>2</code>)</li>
+<li>Defensive Stance towards Last Seen Position (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Walk Easy</strong> (<code>usemarch</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->When true, will use a variety of more casual walking animations instead of the standard walk. For use in crowds. WARNING: this animation only has a north component. For use under very special circumstances only.</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Is a Medic</strong> (<code>is_medic</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes (carries 4 health vials)</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (carries 4 health vials) (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Prevent Grenade Removal On Explosive Damage</strong> (<code>prevent_grenade_explosive_removal</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes (Grenades wont be removed)</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (Grenades wont be removed) (<code>1</code>)</li>
 </ul>
 </li>
 <li>

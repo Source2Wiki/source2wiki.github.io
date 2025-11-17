@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/point_template-dota2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/point_template-dota2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/point_template-dota2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/point_template-dota2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,8 +32,8 @@
 <li>
 <p><strong>Create Client-Only Entity</strong> (<code>clientSideEntity</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -71,8 +71,8 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Don&#x27;t remove template entities</li>
-<li>Preserve entity names (Don&#x27;t do name fixup)</li>
+<li>Don&#x27;t remove template entities (<code>1</code>)</li>
+<li>Preserve entity names (Don&#x27;t do name fixup) (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -90,17 +90,17 @@
 <li>
 <p><strong>Spawn Group Type</strong> (<code>spawnGroupType</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Spawn into point_template&#x27;s spawn group</li>
-<li>Spawn into the currently active spawn group</li>
-<li>Spawn into a newly created spawn group</li>
+<li>Spawn into point_template&#x27;s spawn group (<code>INSERT_INTO_POINT_TEMPLATE_SPAWN_GROUP</code>)</li>
+<li>Spawn into the currently active spawn group (<code>INSERT_INTO_CURRENTLY_ACTIVE_SPAWN_GROUP</code>)</li>
+<li>Spawn into a newly created spawn group (<code>INSERT_INTO_NEWLY_CREATED_SPAWN_GROUP</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Client Only Entity Behavior</strong> (<code>clientOnlyEntityBehavior</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->This controls the behavior of client only entities spawned by the point_template. Either you can create them only for clients that are currently connected at the point the point_template is spawned (good for transient things like explosions), or you can create them for clients who connect after the point_template is spawned. This behavior only affects point_templates that create their own spawn groups.</p>
 <ul>
-<li>Only create for clients connected at the time at which point_template spawns its contents</li>
-<li>Create for clients who connect after the point_template spawns its contents</li>
+<li>Only create for clients connected at the time at which point_template spawns its contents (<code>CREATE_FOR_CURRENTLY_CONNECTED_CLIENTS_ONLY</code>)</li>
+<li>Create for clients who connect after the point_template spawns its contents (<code>CREATE_FOR_CLIENTS_WHO_CONNECT_LATER</code>)</li>
 </ul>
 </li>
 <li>

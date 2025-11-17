@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/prop_ragdoll-hla"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/prop_ragdoll-hla"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_ragdoll-hla" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/prop_ragdoll-hla" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,46 +51,46 @@
 <li>
 <p><strong>Minimum CPU Level</strong> (<code>mincpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (low)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (low) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum CPU Level</strong> (<code>maxcpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>low (<code>1</code>)</li>
+<li>medium (<code>2</code>)</li>
+<li>high (<code>3</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Minimum GPU Level</strong> (<code>mingpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (very low)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (very low) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Maximum GPU Level</strong> (<code>maxgpulevel</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>default (high)</li>
-<li>very low</li>
-<li>low</li>
-<li>medium</li>
-<li>high</li>
+<li>default (high) (<code>0</code>)</li>
+<li>very low (<code>1</code>)</li>
+<li>low (<code>2</code>)</li>
+<li>medium (<code>3</code>)</li>
+<li>high (<code>4</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Disable X360</strong> (<code>disableX360</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -111,12 +111,12 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Debris - Don&#x27;t collide with the player or other debris</li>
-<li>Allow Dissolve</li>
-<li>Motion Disabled</li>
-<li>Allow stretch</li>
-<li>Start asleep</li>
-<li>Don&#x27;t force sleep</li>
+<li>Debris - Don&#x27;t collide with the player or other debris (<code>4</code>)</li>
+<li>Allow Dissolve (<code>8192</code>)</li>
+<li>Motion Disabled (<code>16384</code>)</li>
+<li>Allow stretch (<code>32768</code>)</li>
+<li>Start asleep (<code>65536</code>)</li>
+<li>Don&#x27;t force sleep (<code>131072</code>)</li>
 </ul>
 </li>
 <li>
@@ -137,8 +137,8 @@
 <li>
 <p><strong>Carry Type Override</strong> (<code>carrytype_override</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Default (Code decides)</li>
-<li>Too heavy to move</li>
+<li>Default (Code decides) (<code>CARRY_TYPE_INVALID</code>)</li>
+<li>Too heavy to move (<code>CARRY_TYPE_TOO_HEAVY</code>)</li>
 </ul>
 </li>
 </ul></div></div></details>

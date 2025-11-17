@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/dz_door-cs2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/dz_door-cs2"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/dz_door-cs2" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/dz_door-cs2" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,10 +29,10 @@
 <li>
 <p><strong>Glow State</strong> (<code>glowstate</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>OFF</li>
-<li>+use</li>
-<li>look-at</li>
-<li>ON</li>
+<li>OFF (<code>0</code>)</li>
+<li>+use (<code>1</code>)</li>
+<li>look-at (<code>2</code>)</li>
+<li>ON (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -76,14 +76,14 @@
 <p><strong>Cast Shadows</strong> (<code>disableshadows</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Used to disable shadow casting from this entity.</p>
 <ul>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
-<li>Enabled</li>
-<li>No Shadows</li>
-<li>Only Realtime Shadows</li>
-<li>Only Baked Shadows</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
+<li>Enabled (<code>0</code>)</li>
+<li>No Shadows (<code>1</code>)</li>
+<li>Only Realtime Shadows (<code>2</code>)</li>
+<li>Only Baked Shadows (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -145,10 +145,10 @@
 <li>
 <p><strong>Spawn Position</strong> (<code>spawnpos</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Closed</li>
-<li>Open forward</li>
-<li>Open back</li>
-<li>Ajar (use Ajar Angle)</li>
+<li>Closed (<code>0</code>)</li>
+<li>Open forward (<code>1</code>)</li>
+<li>Open back (<code>2</code>)</li>
+<li>Ajar (use Ajar Angle) (<code>3</code>)</li>
 </ul>
 </li>
 <li>
@@ -210,39 +210,39 @@
 <p><strong>Lightmap Static</strong> (<code>lightmapstatic</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Determines if this geometry be considered static &amp; cast shadows/bounce light when baking lightmaps?</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Bounce Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Bounce Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Starts Open</li>
-<li>NPCs Can&#x27;t Use</li>
-<li>Starts locked</li>
-<li>Door silent (No sound, and does not alert NPCs)</li>
-<li>Use closes</li>
-<li>Door silent to NPCS (Does not alert NPCs)</li>
-<li>Ignore player +USE</li>
+<li>Starts Open (<code>1</code>)</li>
+<li>NPCs Can&#x27;t Use (<code>512</code>)</li>
+<li>Starts locked (<code>2048</code>)</li>
+<li>Door silent (No sound, and does not alert NPCs) (<code>4096</code>)</li>
+<li>Use closes (<code>8192</code>)</li>
+<li>Door silent to NPCS (Does not alert NPCs) (<code>16384</code>)</li>
+<li>Ignore player +USE (<code>32768</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Open Direction</strong> (<code>opendir</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Force the door to open only forwards or only backwards. Both directions is the standard door behavior.</p>
 <ul>
-<li>Open Both Directions</li>
-<li>Open Forward Only</li>
-<li>Open Backward Only</li>
+<li>Open Both Directions (<code>0</code>)</li>
+<li>Open Forward Only (<code>1</code>)</li>
+<li>Open Backward Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Hardware Type</strong> (<code>hardware</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>None</li>
-<li>Lever</li>
-<li>Push bar</li>
-<li>Keypad</li>
+<li>None (<code>0</code>)</li>
+<li>Lever (<code>1</code>)</li>
+<li>Push bar (<code>2</code>)</li>
+<li>Keypad (<code>3</code>)</li>
 </ul>
 </li>
 <li>

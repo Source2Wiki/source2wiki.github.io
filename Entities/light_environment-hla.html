@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/light_environment-hla"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/light_environment-hla"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/light_environment-hla" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/light_environment-hla" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -42,24 +42,24 @@
 <li>
 <p><strong>Render Specular</strong> (<code>renderspecular</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Off</li>
-<li>On</li>
-<li>Bake into cubemaps</li>
+<li>Off (<code>0</code>)</li>
+<li>On (<code>1</code>)</li>
+<li>Bake into cubemaps (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Render Transmissive</strong> (<code>rendertransmissive</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Off</li>
-<li>On</li>
+<li>Off (<code>0</code>)</li>
+<li>On (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Indirect Lighting</strong> (<code>indirectlight</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How indirect lighting should be represented</p>
 <ul>
-<li>None</li>
-<li>Baked</li>
+<li>None (<code>0</code>)</li>
+<li>Baked (<code>1</code>)</li>
 </ul>
 </li>
 <li>
@@ -79,9 +79,9 @@
 <p><strong>Cast Shadows</strong> (<code>castshadows</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Whether this light casts shadow</p>
 <ul>
-<li>No</li>
-<li>Yes</li>
-<li>Baked Only</li>
+<li>No (<code>0</code>)</li>
+<li>Yes (<code>1</code>)</li>
+<li>Baked Only (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -91,18 +91,18 @@
 <li>
 <p><strong>Appearance</strong> (<code>style</code>) &lt;<code>Choices</code>&gt;</p>
 <ul>
-<li>Normal</li>
-<li>Fluorescent flicker</li>
-<li>Slow, strong pulse</li>
-<li>Slow pulse, noblack</li>
-<li>Gentle pulse</li>
-<li>Flicker A</li>
-<li>Flicker B</li>
-<li>Candle A</li>
-<li>Candle B</li>
-<li>Candle C</li>
-<li>Fast strobe</li>
-<li>Slow strobe</li>
+<li>Normal (<code>0</code>)</li>
+<li>Fluorescent flicker (<code>10</code>)</li>
+<li>Slow, strong pulse (<code>2</code>)</li>
+<li>Slow pulse, noblack (<code>11</code>)</li>
+<li>Gentle pulse (<code>5</code>)</li>
+<li>Flicker A (<code>1</code>)</li>
+<li>Flicker B (<code>6</code>)</li>
+<li>Candle A (<code>3</code>)</li>
+<li>Candle B (<code>7</code>)</li>
+<li>Candle C (<code>8</code>)</li>
+<li>Fast strobe (<code>4</code>)</li>
+<li>Slow strobe (<code>9</code>)</li>
 </ul>
 </li>
 <li>
@@ -198,12 +198,12 @@
 <p><strong>Direct Lighting</strong> (<code>directlight</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How direct lighting should be represented</p>
 <ul>
-<li>None</li>
-<li>Baked</li>
-<li>Per-Pixel</li>
-<li>None</li>
-<li>Baked</li>
-<li>Per-Pixel</li>
+<li>None (<code>0</code>)</li>
+<li>Baked (<code>1</code>)</li>
+<li>Per-Pixel (<code>2</code>)</li>
+<li>None (<code>0</code>)</li>
+<li>Baked (<code>1</code>)</li>
+<li>Per-Pixel (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -214,11 +214,11 @@
 <p><strong>Volumetric Fogging</strong> (<code>fog_lighting</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How should light interact with volumetric fogging</p>
 <ul>
-<li>None</li>
-<li>Baked</li>
-<li>Dynamic</li>
-<li>Baked - no shadows</li>
-<li>Dynamic - no shadows</li>
+<li>None (<code>0</code>)</li>
+<li>Baked (<code>1</code>)</li>
+<li>Dynamic (<code>2</code>)</li>
+<li>Baked - no shadows (<code>3</code>)</li>
+<li>Dynamic - no shadows (<code>4</code>)</li>
 </ul>
 </li>
 <li>

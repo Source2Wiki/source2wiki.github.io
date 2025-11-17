@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Source2 Wiki</title><meta data-rh="true" property="og:title" content="Source2 Wiki"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://source2wiki.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://source2wiki.github.io/Entities/npc_template_maker-steamvr"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="source2, wiki, source2wiki"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="description" content="&lt;!---"><meta data-rh="true" property="og:description" content="&lt;!---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://source2wiki.github.io/Entities/npc_template_maker-steamvr"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_template_maker-steamvr" hreflang="en"><link data-rh="true" rel="alternate" href="https://source2wiki.github.io/Entities/npc_template_maker-steamvr" hreflang="x-default"><script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Source2 Wiki","url":"https://source2.wiki/","logo":"https://www.source2.wiki/img/logo.svg","isAccessibleForFree":true,"screenshot":"https://www.source2.wiki/img/docusaurus-social-card.jpg","image":"https://www.source2.wiki/img/social-icon.png"}</script><link rel="stylesheet" href="/assets/css/styles.5e900984.css">
-<script src="/assets/js/runtime~main.e6477e74.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9950989.js" defer="defer"></script>
 <script src="/assets/js/main.e8ff43d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -65,10 +65,10 @@
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Fade Corpse</li>
-<li>Infinite Children</li>
-<li>Do Not Drop</li>
-<li>Don&#x27;t Spawn While Visible</li>
+<li>Fade Corpse (<code>16</code>)</li>
+<li>Infinite Children (<code>32</code>)</li>
+<li>Do Not Drop (<code>64</code>)</li>
+<li>Don&#x27;t Spawn While Visible (<code>128</code>)</li>
 </ul>
 </li>
 <li>
@@ -83,18 +83,18 @@
 <p><strong>Dest. Criterion: Visible to player?</strong> (<code>CriterionVisibility</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Should the NPC try to spawn at a destination that the player can see? Only applicable if a Destination Group is being used.</p>
 <ul>
-<li>Yes</li>
-<li>No</li>
-<li>Don&#x27;t Care</li>
+<li>Yes (<code>0</code>)</li>
+<li>No (<code>1</code>)</li>
+<li>Don&#x27;t Care (<code>2</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Dest. Criterion: Distance to player?</strong> (<code>CriterionDistance</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->Should the NPC try to spawn nearest to or farthest from the player&#x27;s current location? Only applicable if a Destination Group is being used.</p>
 <ul>
-<li>Nearest</li>
-<li>Farthest</li>
-<li>Don&#x27;t Care</li>
+<li>Nearest (<code>0</code>)</li>
+<li>Farthest (<code>1</code>)</li>
+<li>Don&#x27;t Care (<code>2</code>)</li>
 </ul>
 </li>
 <li>
@@ -121,14 +121,14 @@
 <p><strong>Hull Check Mode</strong> (<code>HullCheckMode</code>) &lt;<code>Choices</code>&gt;<br>
 <!-- -->How NPC&#x27;s hull should be checked at spawn destination?</p>
 <ul>
-<li>Default</li>
-<li>No hull check</li>
+<li>Default (<code>0</code>)</li>
+<li>No hull check (<code>1</code>)</li>
 </ul>
 </li>
 <li>
 <p><strong>Spawnflags</strong> (<code>spawnflags</code>) &lt;<code>Flags</code>&gt;</p>
 <ul>
-<li>Don&#x27;t preload template models</li>
+<li>Don&#x27;t preload template models (<code>512</code>)</li>
 </ul>
 </li>
 <li>

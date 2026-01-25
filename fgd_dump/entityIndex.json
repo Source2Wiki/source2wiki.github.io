@@ -7129,6 +7129,15 @@
     ]
   },
   {
+    "Classname": "snd_event_cone",
+    "Description": "",
+    "Icon": "/fgd_dump/img/dota2/snd_event_cone.png",
+    "Games": [
+      "cs2",
+      "dota2"
+    ]
+  },
+  {
     "Classname": "trigger_autosave",
     "Description": "A trigger volume that autosaves when the player touches it.",
     "Icon": "/fgd_dump/img/steamvr/trigger_autosave.png",
